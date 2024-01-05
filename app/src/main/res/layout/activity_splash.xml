@@ -6,30 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logosplash"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logoderana"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:id="@+id/logokemendikbud"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Laboratorium Bahasa dan Sastra"
+        android:text="Derana"
         android:id="@+id/textlabor"
         android:fontFamily="@font/jakartabold"
         android:layout_marginTop="30dp"
         android:textSize="18dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/logokemendikbud"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kantor Bahasa Provinsi Maluku"
-        android:fontFamily="@font/jakartareguler"
-        android:layout_below="@id/textlabor"
-        android:layout_centerHorizontal="true"
-        />
+
 
     <ProgressBar
         android:id="@+id/progressBar"

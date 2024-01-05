@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <include layout="@layout/_ly_header_login"/>
+    <include layout="@layout/_ly_masuk"/>
+    <include layout="@layout/_ly_nomorhp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ada kendala dengan No. HP kamu?"
+        android:textStyle="italic"
+        android:textColor="@color/biru"
+        android:textSize="15dp"
+        android:id="@+id/txKendala"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="kendala"/>
+
+    <include layout="@layout/_ly_button_masuk"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atau login menggunakan"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/jakartareguler"/>
+    </RelativeLayout>
+    <include layout="@layout/_ly_alt_masuk"/>
 
 
-
-
-</RelativeLayout>
+</LinearLayout>

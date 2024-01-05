@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+    >
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonfacebook"
+        android:text="Login Dengan Facebook"
+        android:textAlignment="center"
+        android:fontFamily="@font/jakartareguler"
+        android:id="@+id/altFacebook"
+        android:paddingHorizontal="16dp"
+
+        android:drawableLeft="@drawable/ic_facebook"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/altFacebook"
+        android:layout_marginTop="20dp"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonmasuk"
+        android:text="Login Dengan Google"
+        android:id="@+id/altGoogle"
+        android:textAlignment="center"
+        android:fontFamily="@font/jakartareguler"
+        android:paddingHorizontal="16dp"
+
+        android:drawableLeft="@drawable/ic_google"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"/>
+
+
+</RelativeLayout>
