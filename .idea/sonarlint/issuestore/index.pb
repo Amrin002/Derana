@@ -7,12 +7,6 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
-k
-;app/src/main/java/com/deranaindonesia/derana/BeforeLogin.kt,f\c\fcebd246f7487794ac3c3ee129745e0c4a0251a8
-y
-Iapp/src/main/java/com/deranaindonesia/derana/adapter/ImageSlideAdapter.kt,d\9\d9b0bef720449d25ddffe880eff0a9e4949835c7
-q
-Aapp/src/main/java/com/deranaindonesia/derana/ImageSlideAdapter.kt,c\e\ce7f4d61495ca66ecc80b7220ac10fcf5d611445
 r
 Bapp/src/main/java/com/deranaindonesia/derana/OnBoardingActivity.kt,0\f\0f7e82e51131934a800f0ac3bf5472a393c0677e
 r
@@ -27,3 +21,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+x
+Happ/src/main/java/com/deranaindonesia/derana/adapter/AdapterViewPager.kt,1\7\171e6db5fb9d8566ee5129877e6af84ecae1fd23

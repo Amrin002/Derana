@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:background="@drawable/buttonmasuk2"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="Masuk"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnMasuk"
+        android:textSize="18dp"
+        android:fontFamily="@font/jakartabold"/>
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnMasuk"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/biru"
+        android:text="Belum punya akun? Daftar dulu"
+        android:background="@drawable/onboard_buttonmasuk"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

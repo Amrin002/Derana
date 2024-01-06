@@ -2,13 +2,43 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".fragment.Fragment3">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_boy"
+
+            android:src="@drawable/boy_looking_at_the_globe_through_magnifying_glass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar bahasa dan sastra kini lebih \nseru dan menyenangkan"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/selamat"
+            android:layout_below="@id/image_view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sekarang kamu bisa belajar bahasa daerah dan \nsastra Maluku dari mana pun dan kapan pun dari \ngawai kamu."
+            android:layout_below="@id/selamat"
+            android:fontFamily="@font/jakartareguler"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
 </FrameLayout>

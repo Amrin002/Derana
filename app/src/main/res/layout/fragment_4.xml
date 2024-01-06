@@ -2,13 +2,43 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.Fragment4">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:layout_height="wrap_content"
+    tools:context=".fragment.Fragment3">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_youngpeople"
+
+            android:src="@drawable/young_people_working_on_computer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lestarikan Bahasa dan Sastra \nbersama-sama"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/selamat"
+            android:layout_below="@id/image_view"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayo, bersama-sama kita lestarikan bahasa dan \nsastra yang terdapat di Provinsi Maluku."
+            android:layout_below="@id/selamat"
+            android:fontFamily="@font/jakartareguler"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+    </RelativeLayout>
 </FrameLayout>
