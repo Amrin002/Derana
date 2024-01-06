@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <include layout="@layout/_ly_header_login"/>
-    <include layout="@layout/_ly_masuk"/>
-    <include layout="@layout/_ly_nomorhp"/>
+    <include layout="@layout/_ly_login_header_login"/>
+    <include layout="@layout/_ly_login_masuk"/>
+    <include layout="@layout/_ly_login_nomorhp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp"
         android:onClick="kendala"/>
 
-    <include layout="@layout/_ly_button_masuk"/>
+    <include layout="@layout/_ly_login_button_masuk"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,7 +36,8 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/jakartareguler"/>
     </RelativeLayout>
-    <include layout="@layout/_ly_alt_masuk"/>
+    <include layout="@layout/_ly_login_alt_masuk"/>
+    <include layout="@layout/_ly_login_kebijakan"/>
 
 
 </LinearLayout>

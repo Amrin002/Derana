@@ -7,3 +7,9 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
+k
+;app/src/main/java/com/deranaindonesia/derana/BeforeLogin.kt,f\c\fcebd246f7487794ac3c3ee129745e0c4a0251a8
+y
+Iapp/src/main/java/com/deranaindonesia/derana/adapter/ImageSlideAdapter.kt,d\9\d9b0bef720449d25ddffe880eff0a9e4949835c7
+q
+Aapp/src/main/java/com/deranaindonesia/derana/ImageSlideAdapter.kt,c\e\ce7f4d61495ca66ecc80b7220ac10fcf5d611445

@@ -17,6 +17,7 @@
         android:textSize="18dp"
         android:fontFamily="@font/jakartabold"/>
     <Button
+        android:id="@+id/btnReg"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_below="@id/btnMasuk"

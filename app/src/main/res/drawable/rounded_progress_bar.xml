@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_progress_bar.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="50dp" /> <!-- Sesuaikan radius dengan keinginan Anda -->
+            <solid android:color="@color/birumuda" /> <!-- Ganti warna latar belakang -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="50dp" /> <!-- Sesuaikan radius dengan keinginan Anda -->
+                <solid android:color="@color/white" /> <!-- Ganti warna progress -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

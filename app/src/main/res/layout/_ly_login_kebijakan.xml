@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dengan masuk atau mendaftar, kamu meyutujui"
+        android:fontFamily="@font/jakartareguler"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketentuan Layanan"
+            android:textColor="@color/birumuda"
+            android:fontFamily="@font/jakartabold"
+            android:id="@+id/btnKetentuan"
+            android:onClick="layanan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dan"
+            android:fontFamily="@font/jakartareguler"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPrivasi"
+            android:text="Kebijakan Privasi"
+            android:textColor="@color/birumuda"
+            android:fontFamily="@font/jakartabold"
+            android:onClick="privasi"
+            />
+
+    </LinearLayout>
+    
+
+</LinearLayout>
