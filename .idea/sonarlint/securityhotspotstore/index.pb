@@ -13,3 +13,17 @@ y
 Iapp/src/main/java/com/deranaindonesia/derana/adapter/ImageSlideAdapter.kt,d\9\d9b0bef720449d25ddffe880eff0a9e4949835c7
 q
 Aapp/src/main/java/com/deranaindonesia/derana/ImageSlideAdapter.kt,c\e\ce7f4d61495ca66ecc80b7220ac10fcf5d611445
+r
+Bapp/src/main/java/com/deranaindonesia/derana/OnBoardingActivity.kt,0\f\0f7e82e51131934a800f0ac3bf5472a393c0677e
+r
+Bapp/src/main/java/com/deranaindonesia/derana/fragment/Fragment1.kt,d\e\de03785e9c248347e64c99a40eb2ef184e9f3822
+r
+Bapp/src/main/java/com/deranaindonesia/derana/fragment/Fragment2.kt,1\8\18b42500aa48454b3566be2748220cf21074c1c9
+r
+Bapp/src/main/java/com/deranaindonesia/derana/fragment/Fragment3.kt,7\b\7b50deb8e3e859506b467c71c7294429b594b238
+r
+Bapp/src/main/java/com/deranaindonesia/derana/fragment/Fragment4.kt,c\8\c851efa2b1a6df0081c09e51c015f4d08a58c117
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
