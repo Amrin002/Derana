@@ -13,7 +13,7 @@
         android:src="@drawable/logoderana"
 
         android:id="@+id/iconLogo"
-        android:background="@color/transparansi"/>
+        android:background="@drawable/background_logo"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

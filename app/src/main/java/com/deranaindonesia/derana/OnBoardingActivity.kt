@@ -1,6 +1,8 @@
 package com.deranaindonesia.derana
 
 import android.content.Intent
+import android.graphics.Color
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +11,9 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 import androidx.viewpager2.widget.ViewPager2
 import com.deranaindonesia.derana.adapter.AdapterViewPager
@@ -36,7 +41,11 @@ class OnBoardingActivity : AppCompatActivity() {
 
         //identifikasi Variable
         btnMasuk = findViewById(R.id.btnMasuk)
+
         btnDaftar = findViewById(R.id.btnReg)
+
+
+
         btnKetentuan = findViewById(R.id.btnKetentuan)
         btnPrivasi = findViewById(R.id.btnPrivasi)
 
@@ -49,16 +58,28 @@ class OnBoardingActivity : AppCompatActivity() {
         onBoardingPagerAdapter = AdapterViewPager(supportFragmentManager, lifecycle)
         viewPager.adapter = onBoardingPagerAdapter
 
-        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 updateProgress(position)
                 setProgressBarWithAnimation()
                 when (position) {
-                    0 -> setBackgroundColor(R.color.biru)
-                    1 -> setBackgroundColor(R.color.merah)
-                    2 -> setBackgroundColor(R.color.hijau)
-                    3 -> setBackgroundColor(R.color.ungu)
+                    0 -> {
+                        setBackgroundColor(R.color.biru)
+                        setContrastTextColor(R.color.biru)
+                    }
+                    1 -> {
+                        setBackgroundColor(R.color.merah)
+                        setContrastTextColor(R.color.merah)
+                    }
+                    2 -> {
+                        setBackgroundColor(R.color.hijau)
+                        setContrastTextColor(R.color.hijau)
+                    }
+                    3 -> {
+                        setBackgroundColor(R.color.ungu)
+                        setContrastTextColor(R.color.ungu)
+                    }
                 }
             }
         })
@@ -160,4 +181,21 @@ class OnBoardingActivity : AppCompatActivity() {
         viewPager.setBackgroundColor(color)
         window.decorView.setBackgroundColor(color)
     }
+    private fun setContrastTextColor(colorResId: Int) {
+        val color = ContextCompat.getColor(this, colorResId)
+        btnDaftar.setTextColor(getContrastColor(color))
+    }
+
+    // Fungsi untuk mendapatkan warna kontras
+    private fun getContrastColor(color: Int): Int {
+        return when (color) {
+            ContextCompat.getColor(this, R.color.biru) -> ContextCompat.getColor(this, R.color.biru)
+            ContextCompat.getColor(this, R.color.merah) -> ContextCompat.getColor(this, R.color.merah)
+            ContextCompat.getColor(this, R.color.hijau) -> ContextCompat.getColor(this, R.color.hijau)
+            ContextCompat.getColor(this, R.color.ungu) -> ContextCompat.getColor(this, R.color.ungu)
+            else -> Color.BLACK // Default, jika warna tidak sesuai dengan yang diharapkan
+        }
+    }
+
+
 }

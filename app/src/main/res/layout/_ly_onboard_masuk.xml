@@ -8,21 +8,21 @@
     android:layout_marginTop="20dp">
 
     <Button
-        android:background="@drawable/buttonmasuk2"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
+        android:background="@drawable/onboard_buttonmasuk2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:text="Masuk"
         android:layout_centerHorizontal="true"
         android:id="@+id/btnMasuk"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:fontFamily="@font/jakartabold"/>
     <Button
         android:id="@+id/btnReg"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_below="@id/btnMasuk"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/biru"
         android:text="Belum punya akun? Daftar dulu"
         android:background="@drawable/onboard_buttonmasuk"
         android:layout_marginTop="20dp"/>
