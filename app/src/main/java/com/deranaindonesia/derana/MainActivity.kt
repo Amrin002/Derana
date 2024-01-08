@@ -1,6 +1,7 @@
 package com.deranaindonesia.derana
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -66,7 +67,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun daftar() {
         // implementasi Button daftar
-        showToast("Daftar")
+        val intent = Intent(this, SignupActivity::class.java)
+        startActivity(intent)
     }
     private fun kendala() {
         showToast("Kendala")

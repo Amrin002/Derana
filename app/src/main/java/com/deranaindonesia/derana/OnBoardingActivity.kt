@@ -155,7 +155,8 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun daftar() {
         // implementasi Button daftar
-        showToast("Daftar")
+        val intent = Intent(this, SignupActivity::class.java)
+        startActivity(intent)
     }
 
     private fun layanan() {

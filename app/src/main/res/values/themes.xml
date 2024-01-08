@@ -3,8 +3,9 @@
     <style name="Base.Theme.Derana" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/biru</item>
         <item name="colorSecondary">@color/birumuda</item>
-<!--        <item name="android:statusBarColor">@color/biru</item>-->
+        <item name="android:statusBarColor">@color/biru</item>
         <item name="android:textColorSecondary">@color/gelap</item>
+
 
 <!--        <item name="android:navigationBarColor">@color/biru</item>-->
 

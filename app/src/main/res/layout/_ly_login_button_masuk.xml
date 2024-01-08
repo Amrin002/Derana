@@ -15,6 +15,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/btnMasuk"
         android:textSize="18dp"
+        android:textColor="@color/white"
         android:fontFamily="@font/jakartabold"/>
     <Button
         android:id="@+id/btnReg"

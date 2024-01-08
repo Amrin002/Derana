@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <ImageButton
+        android:id="@+id/backButtonSign"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparansi"
+        android:src="@drawable/icons_arrow_left" />
+    <include layout="@layout/_ly_login_header_login"/>
+    <include layout="@layout/_ly_signup_daftar"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/backgroundbutton_signup"
+        >
+        <Button
+            android:layout_marginLeft="8dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Alamat Email"
+            android:textColor="@color/biru"
+            android:fontFamily="@font/jakartabold"
+            android:id="@+id/emailSignup"
+            android:background="@drawable/backgroundbutton_email_signup"/>
+        <Button
+        android:layout_marginLeft="174dp"
+            android:fontFamily="@font/jakartabold"
+            android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Nomor Telepon"
+        android:id="@+id/phoneSignup"
+        android:background="@color/transparansi"/>
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="313dp" />
+
+    <include layout="@layout/_ly_signup_kebijakan"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonmasuk2"
+        android:textColor="@color/white"
+        android:text="Daftar Sekarang"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonSignup"/>
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

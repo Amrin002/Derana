@@ -11,6 +11,7 @@
     <include layout="@layout/_ly_login_nomorhp"/>
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ada kendala dengan No. HP kamu?"
