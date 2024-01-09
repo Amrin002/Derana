@@ -14,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nomor HP"
+        android:textColor="@color/black"
         android:fontFamily="@font/jakartabold"
         android:textSize="16dp"/>
     <TextView
@@ -35,16 +36,18 @@
             android:background="@drawable/button62"
 
             android:text="   +62"
+            android:elegantTextHeight="true"
             android:fontFamily="@font/jakartabold"
             android:drawableLeft="@drawable/ic_bendera"
             android:paddingHorizontal="15dp"
             android:gravity="center|center_vertical"
-            android:layout_height="wrap_content"
+            android:layout_height="32dp"
             android:id="@+id/ccp"/>
         <EditText
             android:fontFamily="@font/jakartareguler"
-            android:hint="Masukan Nomor"
-            android:layout_width="200dp"
+            android:hint="Masukkan Nomor"
+            android:layout_width="180dp"
+            android:textSize="14.5sp"
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:layout_marginLeft="10dp"

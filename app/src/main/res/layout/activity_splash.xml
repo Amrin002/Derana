@@ -11,8 +11,7 @@
         android:src="@drawable/logoderana"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
-        android:id="@+id/logokemendikbud"
-        android:background="@drawable/background_logo"/>
+        android:id="@+id/logokemendikbud" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,24 +35,6 @@
         android:background="@drawable/progres_loading"
         android:progressTint="@color/biru"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kantor Bahasa Provinsi Maluku"
-        android:id="@+id/textBottomKantor"
-        android:layout_below="@id/progressBar"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/jakartabold"
-        android:textSize="14dp"
-        android:layout_marginTop="160dp"/>
-        <TextView
-            android:layout_width="240dp"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:text="Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi"
-            android:layout_below="@id/textBottomKantor"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"/>
 
 
 

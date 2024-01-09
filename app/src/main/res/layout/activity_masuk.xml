@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+ >
     <include layout="@layout/_ly_login_header_login"/>
     <include layout="@layout/_ly_login_masuk"/>
     <include layout="@layout/_ly_login_nomorhp"/>
@@ -15,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ada kendala dengan No. HP kamu?"
-        android:textStyle="italic"
+        android:fontFamily="@font/jakartabold"
         android:textColor="@color/biru"
         android:textSize="15dp"
         android:id="@+id/txKendala"

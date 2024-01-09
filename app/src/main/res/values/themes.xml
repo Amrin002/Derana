@@ -6,6 +6,9 @@
         <item name="android:statusBarColor">@color/biru</item>
         <item name="android:textColorSecondary">@color/gelap</item>
 
+        <item name="backgroundColor">@color/white</item>
+        <item name="background">@color/white</item>
+
 
 <!--        <item name="android:navigationBarColor">@color/biru</item>-->
 

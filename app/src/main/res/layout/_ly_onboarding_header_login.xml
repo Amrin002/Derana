@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/logoderana"
+        android:src="@drawable/derana_putih"
         android:id="@+id/iconLogo" />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp">
         <TextView
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Derana"

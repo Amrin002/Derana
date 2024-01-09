@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/image_view"
-            android:layout_width="wrap_content"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_boy"
 
@@ -21,6 +21,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"/>
         <TextView
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Belajar bahasa dan sastra kini lebih \nseru dan menyenangkan"
@@ -33,6 +34,7 @@
             />
 
         <TextView
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sekarang kamu bisa belajar bahasa daerah dan \nsastra Maluku dari mana pun dan kapan pun dari \ngawai kamu."

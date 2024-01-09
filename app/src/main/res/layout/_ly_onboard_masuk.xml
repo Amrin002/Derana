@@ -10,22 +10,33 @@
     <Button
         android:background="@drawable/onboard_buttonmasuk2"
         android:layout_width="300dp"
+        android:elegantTextHeight="true"
         android:layout_height="50dp"
         android:text="Masuk"
         android:layout_centerHorizontal="true"
         android:id="@+id/btnMasuk"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:fontFamily="@font/jakartabold"/>
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/jakartabold"
+        />
+
     <Button
         android:id="@+id/btnReg"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@id/btnMasuk"
         android:layout_centerHorizontal="true"
-        android:text="Belum punya akun? Daftar dulu"
+        android:layout_marginTop="20dp"
         android:background="@drawable/onboard_buttonmasuk"
-        android:layout_marginTop="20dp"/>
+        android:elegantTextHeight="true"
+
+        android:fontFamily="@font/jakartabold"
+        android:gravity="center"
+        android:text="Belum punya akun? Daftar dulu"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
 
 
 

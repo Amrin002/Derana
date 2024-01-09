@@ -6,16 +6,18 @@
     android:layout_marginLeft="20dp"
     android:layout_marginTop="20dp">
     <TextView
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Masuk"
         android:fontFamily="@font/jakartabold"
-        android:textSize="25dp"/>
+        android:textSize="20dp"/>
     <TextView
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Silakan masuk menggunakan nomor HP yang telah didaftarkan."
-        android:textSize="16dp"
+        android:text="Silakan masuk menggunakan nomor HP \nyang telah didaftarkan."
+        android:textSize="14.5dp"
         android:fontFamily="@font/jakartareguler"
         android:layout_marginTop="20dp"/>
 

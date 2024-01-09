@@ -5,20 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".OnBoardingActivity">
+    tools:context=".OnBoardingActivity"
+  >
 
-    <include layout="@layout/_ly_login_header_login" />
+    <include layout="@layout/_ly_onboarding_header_login" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="13dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp">
 
             <ProgressBar
 
@@ -67,10 +70,11 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
         android:layout_height="400dp"
         android:id="@+id/viewPager2"/>
     <include layout="@layout/_ly_onboard_masuk"/>
-    <include layout="@layout/_ly_login_kebijakan"/>
+    <include layout="@layout/_ly_onboarding_kebijakan"/>
 
 
 </LinearLayout>
