@@ -10,6 +10,8 @@
     <color name="hijau">#00AA13</color>
     <color name="ungu">#93328E</color>
     <color name="gelap">#2A000000</color>
-<color name="birumuda1">#E6F6FC</color>
+    <color name="hitamtransparan">#7F7F7F</color>
+    <color name="birumuda1">#E6F6FC</color>
+    <color name="gelap2">#8F000000</color>
 
 </resources>

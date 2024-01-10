@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kode OTP sudah dikirim!"
+        android:fontFamily="@font/jakartabold"
+        android:textSize="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan kode OTP yang kami kirim \nmelalui nomor: "
+        android:textSize="14.5dp"
+        android:fontFamily="@font/jakartareguler"
+        android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="108dp"
+            android:id="@+id/emailVerification"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/jakartabold"
+            android:text="email@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="14.5dp" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

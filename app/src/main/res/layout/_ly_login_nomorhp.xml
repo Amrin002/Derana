@@ -43,15 +43,20 @@
             android:gravity="center|center_vertical"
             android:layout_height="32dp"
             android:id="@+id/ccp"/>
+
         <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#000000"
             android:fontFamily="@font/jakartareguler"
             android:hint="Masukkan Nomor"
-            android:layout_width="180dp"
-            android:textSize="14.5sp"
-            android:layout_height="wrap_content"
             android:inputType="phone"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/etPhoneNumber"/>
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gelap2"
+            android:textSize="14.5sp" />
     </LinearLayout>
 
 

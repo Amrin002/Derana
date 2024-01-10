@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/white"
  >
     <include layout="@layout/_ly_login_header_login"/>
     <include layout="@layout/_ly_login_masuk"/>
@@ -36,6 +37,7 @@
         android:layout_height="wrap_content"
         android:text="atau login menggunakan"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:fontFamily="@font/jakartareguler"/>
     </RelativeLayout>
     <include layout="@layout/_ly_login_alt_masuk"/>

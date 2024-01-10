@@ -9,15 +9,19 @@
         android:layout_height="25dp"
         android:orientation="horizontal"
         android:id="@+id/privation">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkboxKebijakan"/>
+
+        <CheckBox
+            android:id="@+id/checkboxKebijakan"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000" />
 
         <TextView
             android:id="@+id/txt1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:fontFamily="@font/jakartareguler"
             android:text="Saya telah membaca dan menerima segala isi"
             />
@@ -28,48 +32,42 @@
     android:orientation="horizontal"
         android:layout_marginTop="-5dp"
         android:layout_below="@id/privation"
-        android:layout_marginLeft="2dp"
+        android:layout_marginLeft="32dp"
         android:id="@+id/ly"
     >
 
         <TextView
-            android:id="@+id/Syarat"
             android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_below="@id/txt1"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service"
+            android:textColor="@color/biru"
 
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="30dp"
-
-            android:layout_marginRight="228dp"
-            android:fontFamily="@font/jakartabold"
-            android:onClick="Syarat"
-            android:text="Syarat Pengguna"
-            android:textColor="#00A4DE" />
-
+            android:fontFamily="@font/jakartabolditalic"
+            android:id="@+id/Syarat"
+            android:onClick="layanan"/>
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txt1"
-        android:layout_marginLeft="3dp"
-        android:layout_centerHorizontal="true"
-        
-        android:text="dan" />
-
-    <TextView
-        android:id="@+id/kebijakan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="3dp"
-        android:fontFamily="@font/jakartabold"
-        android:onClick="kebijakan"
-        android:text="Kebijakan Privasi"
-        android:textColor="#00A4DE" />
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dan"
+            android:fontFamily="@font/jakartareguler"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kebijakan"
+            android:text="Privaci Policy"
+            android:textColor="@color/biru"
+            android:fontFamily="@font/jakartabolditalic"
+            android:onClick="privasi"
+            />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Derana"
         android:layout_marginStart="3dp"
+        android:textColor="@color/black"
         android:fontFamily="@font/jakartareguler"/>
 </LinearLayout>
 
@@ -77,14 +75,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="1dp"
         android:id="@+id/haveacount"
         android:layout_below="@id/ly">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/jakartareguler"
-            android:text="Sudah punya akun Derana?"/>
+            android:text="Sudah punya akun Derana?"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
             android:text="Masuk"
             android:id="@+id/haveAccount"
             android:fontFamily="@font/jakartabold"
-            android:textColor="#00A4DE"
+            android:textColor="@color/biru"
             android:layout_marginLeft="5dp"/>
 
     </LinearLayout>

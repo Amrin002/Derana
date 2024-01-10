@@ -4,6 +4,7 @@ package com.deranaindonesia.derana
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -61,8 +62,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun masuk() {
-        // Implemantasi button masuk
+        val phone = etPhone.text.toString().trim()
 
+        Log.d("Masuk", "Nomor telepon: $phone")
+
+        if (phone.length <= 10) {
+            showToast("Nomor telepon harus berisi 10 angka")
+            return
+        }
+        // Implemantasi button masuk
+        verfication()
+    }
+
+    private fun verfication() {
+        val phone = etPhone.text.toString().trim()
+        val intent = Intent(this, VerificationActivity::class.java)
+        intent.putExtra("PHONE_NUMBER", phone)
+        startActivity(intent)
     }
 
     private fun daftar() {

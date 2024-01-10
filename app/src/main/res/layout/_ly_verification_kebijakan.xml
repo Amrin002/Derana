@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="28dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Dengan masuk atau mendaftar, kamu menyetujui"
+        android:fontFamily="@font/jakartalight"
+        android:textSize="13.1sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service"
+            android:textColor="@color/black"
+
+            android:fontFamily="@font/jakartabolditalic"
+            android:id="@+id/btnTerms"
+            android:onClick="layanan"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dan"
+            android:fontFamily="@font/jakartareguler"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPrivaci"
+            android:text="Privaci Policy"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakartabolditalic"
+            android:onClick="privasi"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

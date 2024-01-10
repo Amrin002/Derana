@@ -105,3 +105,7 @@ Q.idea/sonarlint/securityhotspotstore/b/b/bbf202272a96de5cd6b6828ffdc55fb3ce4528
 Q.idea/sonarlint/securityhotspotstore/7/3/732d832ae1e4a0e18935a20f3d8e9307f813c658,4\5\45d99e0bd11cb7e739ebfd236eea03b82161ca8f
 w
 G.idea/sonarlint/issuestore/f/0/f0e0f9cec86fe4b939ae22be5264c758801eb28f,5\0\50e216b4439d2538168c3ddca9c0c2fe23bd1c02
+|
+Lapp/src/main/java/com/deranaindonesia/derana/kodeotp/VerificationActivity.kt,9\6\96d4c5ee4654ed8659b7fe33cfe3907e4d289361
+t
+Dapp/src/main/java/com/deranaindonesia/derana/VerificationActivity.kt,e\3\e3aff0f1994cde01af34ff73bcd700a717a898f5

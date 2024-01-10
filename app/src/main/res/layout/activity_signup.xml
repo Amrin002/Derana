@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignupActivity">
+    tools:context=".SignupActivity"
+    android:background="@color/white">
 
     <ImageButton
         android:id="@+id/backButtonSign"
@@ -27,6 +28,7 @@
         android:layout_width="330dp"
         android:layout_height="55dp"
         android:gravity="center_vertical"
+        android:layout_marginBottom="14dp"
         android:background="@drawable/backgroundbutton_signup"
         >
         <Button
