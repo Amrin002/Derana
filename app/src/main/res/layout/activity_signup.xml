@@ -20,35 +20,45 @@
     <include layout="@layout/_ly_login_header_login"/>
     <include layout="@layout/_ly_signup_daftar"/>
     <RelativeLayout
-        android:layout_marginTop="15dp"
+
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <RelativeLayout
-        android:layout_centerHorizontal="true"
-        android:layout_width="330dp"
-        android:layout_height="55dp"
-        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+
         android:layout_marginBottom="14dp"
         android:background="@drawable/backgroundbutton_signup"
         >
+
         <Button
-            android:layout_marginLeft="8dp"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Alamat Email"
-            android:textColor="@color/biru"
-            android:fontFamily="@font/jakartabold"
             android:id="@+id/emailSignup"
-            android:background="@drawable/backgroundbutton_email_signup"/>
-        <Button
-        android:layout_marginLeft="174dp"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backgroundbutton_email_signup"
+            android:elegantTextHeight="true"
             android:fontFamily="@font/jakartabold"
-            android:textColor="@color/white"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Alamat Email"
+            android:textColor="@color/biru" />
+        <Button
+        android:layout_marginLeft="170dp"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/jakartabold"
+            android:background="@drawable/backgroundbutton_email_signup"
+            android:textColor="@color/biru"
+            android:textAllCaps="false"
+
+            android:layout_centerVertical="true"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
         android:text="Nomor Telepon"
         android:id="@+id/phoneSignup"
-        android:background="@color/transparansi"/>
+       />
 
 
     </RelativeLayout>
@@ -58,7 +68,7 @@
         android:id="@+id/fragmentContainerView"
         android:name="com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail"
         android:layout_width="match_parent"
-        android:layout_height="313dp" />
+        android:layout_height="303dp" />
 
     <include layout="@layout/_ly_signup_kebijakan"/>
 <RelativeLayout

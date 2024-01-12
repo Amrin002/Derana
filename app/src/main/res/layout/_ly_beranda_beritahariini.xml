@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berita kebahasaan hari ini"
+        android:fontFamily="@font/jakartabold"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--        nanti tambahkan tag html legacy di kotlinnya-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Baca update berita terkait dengan kebahasaan "
+            android:fontFamily="@font/jakartareguler"
+            android:textColor="#999798"
+
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Semua"
+            android:fontFamily="@font/jakartabold"
+            android:textColor="@color/biru"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/seeAll2"/>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Terbaru"
+                android:textColor="@color/white"
+                android:fontFamily="@font/jakartabold"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_ayobelajar"
+                android:id="@+id/btnBerita1"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Balai Bahasa"
+                android:textColor="@color/black"
+                android:fontFamily="@font/jakartareguler"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_ayobelajar_notactivated"
+                android:id="@+id/btnBerita2"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Kantor Bahasa"
+                android:textColor="@color/black"
+                android:fontFamily="@font/jakartareguler"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_ayobelajar_notactivated"
+                android:id="@+id/btnBerita3"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Badan Bahasa"
+                android:textColor="@color/black"
+                android:fontFamily="@font/jakartareguler"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_ayobelajar_notactivated"
+                android:id="@+id/btnBerita4"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Merdeka Belajar"
+                android:textColor="@color/black"
+                android:fontFamily="@font/jakartareguler"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_ayobelajar_notactivated"
+                android:id="@+id/btnBerita5"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

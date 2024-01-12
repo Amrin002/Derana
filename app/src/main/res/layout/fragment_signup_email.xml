@@ -16,29 +16,30 @@
             android:layout_height="wrap_content"
             android:text="Alamat Email"
             android:fontFamily="@font/jakartabold"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/black" />
 
         <EditText
             android:layout_marginTop="10dp"
-            android:layout_width="320dp"
+            android:layout_width="300dp"
             android:layout_height="48dp"
             android:id="@+id/etEmailSignup"
+            android:textSize="14sp"
             android:textColorHint="@color/hitamtransparan"
             android:textColor="@color/black"
             android:background="@drawable/background_et_signup"
             android:inputType="textEmailAddress"
             android:paddingStart="10dp"
-            android:hint="Masukan Alamat Email Anda"
+            android:hint="Masukkan alamat email kamu di sini"
             android:fontFamily="@font/jakartareguler"/>
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nama Lengkap"
             android:textColor="@color/black"
             android:fontFamily="@font/jakartabold"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/etNamaSignupEmail"
@@ -47,21 +48,21 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/background_et_signup"
             android:fontFamily="@font/jakartareguler"
-            android:hint="Masukan Nama Lengkap Anda"
+            android:hint="Masukkan nama lengkap kamu di sini"
             android:inputType="text"
             android:paddingStart="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/hitamtransparan"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
         <TextView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/black"
             android:textColor="@color/black"
             android:text="Password"
             android:fontFamily="@font/jakartabold"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
 
         <EditText
             android:id="@+id/etPassSignupEmail"
@@ -69,12 +70,12 @@
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/jakartareguler"
-            android:hint="Masukan Password Anda"
-            android:backgroundTint="@color/black"
+
+            android:backgroundTint="#D9D9D9"
             android:inputType="textPassword"
             android:maxLength="255"
             android:paddingStart="10dp"
-            android:textColor="@color/hitamtransparan"
+            android:textColor="@color/biru"
             android:textColorHint="@color/black" />
 
 

@@ -2,7 +2,7 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginStart="10dp"
+    android:layout_marginStart="20dp"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/kebijakan"
-            android:text="Privaci Policy"
+            android:text="Privacy Policy"
             android:textColor="@color/biru"
             android:fontFamily="@font/jakartabolditalic"
             android:onClick="privasi"

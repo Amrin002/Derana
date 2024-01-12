@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BerandaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00A4DE"
+        android:id="@+id/ly">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_tab_berandap"
+            >
+            <Button
+                android:layout_marginLeft="8dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="Beranda"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/jakartabold"
+                android:id="@+id/tabBtnBeranda"
+                android:background="@drawable/backgroundbutton_email_signup"/>
+            <Button
+
+                android:fontFamily="@font/jakartabold"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:text="Statistik"
+                android:id="@+id/tabbtnStatistik"
+                android:background="@color/transparansi"/>
+
+            <Button
+
+                android:fontFamily="@font/jakartabold"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:text="Chat"
+                android:id="@+id/tabbtnChat"
+                android:background="@color/transparansi"/>
+            <Button
+
+                android:fontFamily="@font/jakartabold"
+                android:textColor="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:text="Lapor"
+                android:id="@+id/tabbtnLapor"
+                android:background="@color/transparansi"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.deranaindonesia.derana.fragmentberanda.BerandaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tab"/>
+
+
+</LinearLayout>
