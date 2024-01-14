@@ -121,3 +121,9 @@ Lapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/ChatFragment.kt,9
 Napp/src/main/java/com/deranaindonesia/derana/widgetberanda/SearchBarBeranda.kt,f\a\fa3a487b01121553a11691b920db1e595ed80ee0
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+|
+Lapp/src/main/java/com/deranaindonesia/derana/adapter/ContentBelajarHolder.kt,7\8\78ee58bbfb4b7db831cc58ae59b50db7cbcc8410
+
+Qapp/src/main/java/com/deranaindonesia/derana/datacontentbelajar/ContentBelajar.kt,9\b\9b89ecabd02859896a01548247d1556fdd70780e
+
+Qapp/src/main/java/com/deranaindonesia/derana/adapter/AdapterViewContentBelajar.kt,4\a\4af4f1bf6efd29d2494d69267da219e60ebebf61

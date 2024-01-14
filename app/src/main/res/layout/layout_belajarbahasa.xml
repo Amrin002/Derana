@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:id="@+id/idBackground"
+    android:backgroundTintMode="multiply"
+    android:background="@drawable/background_contentbelajar">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakartareguler"
+            android:text="Belajar"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahasa Buru"
+            android:fontFamily="@font/jakartareguler"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:id="@+id/idBahasa"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idEpisode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakartareguler"
+            android:text="Episode 1"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarBelajarVideo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:progress="@integer/material_motion_duration_short_1"
+            android:progressDrawable="@drawable/progress_belajar" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/idVideoBelajar"
+        android:layout_width="110dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginStart="200dp"
+        android:src="@drawable/profilcontentvideo1" />
+
+
+</RelativeLayout>
