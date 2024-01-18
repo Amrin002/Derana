@@ -19,6 +19,7 @@ import com.deranaindonesia.derana.datacontent.ContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBerita
 import com.deranaindonesia.derana.fragmentberanda.berandabottomsheet.FiturBottomSheet
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.KBBIFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.PetaBahasaFragment
 
 
 class BerandaFragment : Fragment(R.layout.fragment_beranda) {
@@ -69,6 +70,11 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
             openKBBIFragment()
         }
 
+        btnPetaBahasa = view.findViewById(R.id.btnPetaBahasa)
+        btnPetaBahasa.setOnClickListener{
+            openPetaBahasaFragment()
+        }
+
 
 
         // Set the adapter to the RecyclerView
@@ -95,6 +101,15 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
         adapter1.setItems1(contentlistBerita)
 
 
+    }
+
+    private fun openPetaBahasaFragment() {
+        val fragmentManager : FragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        val petabahasaFragment = PetaBahasaFragment()
+        fragmentTransaction.replace(R.id.tab, petabahasaFragment)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 
     private fun openKBBIFragment() {
