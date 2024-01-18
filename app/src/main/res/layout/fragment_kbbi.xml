@@ -3,9 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragmentberanda.fiturderana.KBBIFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
 
     <LinearLayout
+        android:layout_weight="0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -16,6 +23,46 @@
             android:text="Kelas kata"
             android:fontFamily="@font/jakartabold"
             android:textSize="15sp"
+            android:onClick="kelaskata"
             android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ragam"
+            android:text="Ragam"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/jakartareguler"
+            android:textColor="@color/black"
+            android:onClick="ragam"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bahasa"
+            android:text="Bahasa"
+            android:textSize="15sp"
+            android:fontFamily="@font/jakartareguler"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:onClick="bahasa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bidang"
+            android:layout_marginLeft="15sp"
+            android:text="Bidang"
+            android:textSize="15sp"
+            android:fontFamily="@font/jakartareguler"
+            android:textColor="@color/black"
+            android:onClick="bidang"/>
+
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_view_kbbi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
     </LinearLayout>
 </FrameLayout>

@@ -8,6 +8,7 @@ import android.widget.AdapterView
 
 import android.widget.EditText
 import android.widget.ImageButton
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -17,6 +18,7 @@ import com.deranaindonesia.derana.adapter.AdapterViewContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBerita
 import com.deranaindonesia.derana.fragmentberanda.berandabottomsheet.FiturBottomSheet
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.KBBIFragment
 
 
 class BerandaFragment : Fragment(R.layout.fragment_beranda) {
@@ -64,7 +66,7 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
 
         btnKBBI = view.findViewById(R.id.btnKBBI)
         btnKBBI.setOnClickListener {
-
+            openKBBIFragment()
         }
 
 
@@ -93,6 +95,17 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
         adapter1.setItems1(contentlistBerita)
 
 
+    }
+
+    private fun openKBBIFragment() {
+        val fragmentManager: FragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        // Replace the current fragment with KBBIFragment
+        val kbbiFragment = KBBIFragment()
+        fragmentTransaction.replace(R.id.tab, kbbiFragment)
+        fragmentTransaction.addToBackStack(null) // Add to back stack for back navigation
+        fragmentTransaction.commit()
     }
 
     private fun generateSampleContentBerita(): List<ContentBerita> {

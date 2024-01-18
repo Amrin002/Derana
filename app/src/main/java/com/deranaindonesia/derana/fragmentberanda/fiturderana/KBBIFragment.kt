@@ -5,56 +5,58 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.FragmentTransaction
 import com.deranaindonesia.derana.R
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentkbbi.BahasaFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentkbbi.BidangFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentkbbi.KelasKataFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentkbbi.RagamFragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [KBBIFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class KBBIFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+class KBBIFragment : Fragment(R.layout.fragment_kbbi) {
+    private lateinit var btnKelasKata : TextView
+    private lateinit var btnRagam : TextView
+    private lateinit var btnBahasa : TextView
+    private lateinit var btnBidang : TextView
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        btnKelasKata = view.findViewById(R.id.kelaskata)
+        btnKelasKata.setOnClickListener {
+            tabKelasKata()
         }
+        btnRagam = view.findViewById(R.id.ragam)
+        btnRagam.setOnClickListener {
+            tabRagam()
+        }
+        btnBahasa = view.findViewById(R.id.bahasa)
+        btnBahasa.setOnClickListener {
+            tabBahasa()
+        }
+        btnBidang = view.findViewById(R.id.bidang)
+        btnBidang.setOnClickListener {
+            tabBidang()
+        }
+        tabKelasKata()
+    }
+    private fun tabKelasKata() {
+        replaceFragment(KelasKataFragment())
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kbbi, container, false)
+    private fun tabRagam() {
+        replaceFragment(RagamFragment())
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment KBBIFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            KBBIFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun tabBahasa() {
+        replaceFragment(BahasaFragment())
+    }
+
+    private fun tabBidang() {
+        replaceFragment(BidangFragment())
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction: FragmentTransaction = childFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_view_kbbi, fragment)
+        transaction.commit()
     }
 }
