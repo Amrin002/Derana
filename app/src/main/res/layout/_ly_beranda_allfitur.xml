@@ -56,14 +56,14 @@
             android:layout_height="wrap_content"
             android:background="@color/transparansi"
             android:contentDescription="siniar bahasa"
-            android:src="@drawable/ic_siniarbahasa" />
+            android:src="@drawable/ic_fitur_kbbi" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturKBBI"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="KBBI"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -79,14 +79,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_dapobas" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturDapobas"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Dapobas"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -102,14 +102,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_spai" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturSPAI"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="SPAI"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -125,14 +125,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_ukbi" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturUKBI"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="UKBI"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -148,14 +148,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_bipa_daring" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturBIPA"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="BIPA \nDaring"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -171,14 +171,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_ensiklopedia" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturEnsiklopedia"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Ensiklopedia"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -192,14 +192,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_tesaurus" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturTesaurus"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Tesaurus"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -234,14 +234,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_buku_digital" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturBukuDigital"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Buku \nDigital"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -255,14 +255,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_video_bahasa" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturVideoBahasa"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Video \nBahasa"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -310,14 +310,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_kosakata_swedesh" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturKosakataSwadesh"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Kosakata \nSwadesh"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -333,14 +333,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_kekerabatan_bahasa" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturKekerabatanBahasa"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Kekerabatan \nBahasa"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -356,14 +356,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_data_bahasa" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturDataBahasa"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Data \nBahasa"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -377,14 +377,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_peta_bahasa" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturPetaBahasa"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Peta \nBahasa"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -400,14 +400,14 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparansi"
                 android:contentDescription="siniar bahasa"
-                android:src="@drawable/ic_siniarbahasa" />
+                android:src="@drawable/ic_fitur_vitalitas_bahasa" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/fiturVitalitasBahasa"
                 android:fontFamily="@font/jakartareguler"
-                android:text="Siniar \nBahasa"
+                android:text="Vitalitas \nBahasa"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
