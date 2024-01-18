@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".fragmentberanda.BerandaFragment">
 
@@ -18,18 +19,39 @@
             <include layout="@layout/_ly_beranda_searchbar"/>
             <include layout="@layout/_ly_beranda_fiturbahasa"/>
 
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_allfitur"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/background_rounded"
+                        app:layout_behavior="com.google.android.material.bottomappbar.BottomAppBar$Behavior">
+
+                        <include layout="@layout/_ly_beranda_fiturbahasa" />
+                    </FrameLayout>
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
             <include layout="@layout/_ly_beranda_ayobelajar"/>
             <androidx.recyclerview.widget.RecyclerView
+
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/rvVideoBelajar"/>
             <include layout="@layout/_ly_beranda_beritahariini"/>
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
 
                     android:layout_height="200dp"
-                    android:id="@+id/rvBerita"/>
+                    android:id="@+id/rvBerita"
+                    android:layout_marginBottom="50dp"/>
 
 
 

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/background_allfitur">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bottomsheet"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Produk Kebahasaan"
+            android:fontFamily="@font/jakartabold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(7)"
+            android:fontFamily="@font/jakartareguler"
+            android:textSize="15sp"
+            android:layout_marginLeft="5sp"/>
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="3">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+        <ImageButton
+            android:id="@+id/fiturKBBI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparansi"
+            android:contentDescription="siniar bahasa"
+            android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturKBBI"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturDapobas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturDapobas"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturSPAI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturSPAI"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturUKBI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturUKBI"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturBIPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturBIPA"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturEnsiklopedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturEnsiklopedia"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fiturTesaurus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturTesaurus"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fitursiniarbahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fitursiniarbahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fiturBukuDigital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturBukuDigital"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fiturVideoBahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturVideoBahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Produk Kebahasaan"
+            android:fontFamily="@font/jakartabold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(7)"
+            android:fontFamily="@font/jakartareguler"
+            android:textSize="15sp"
+            android:layout_marginLeft="5sp"/>
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_marginLeft="20dp"
+        android:rowCount="3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturKosakataSwadesh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturKosakataSwadesh"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturKekerabatanBahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturKekerabatanBahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturDataBahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturDataBahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/fiturPetaBahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturPetaBahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <ImageButton
+                android:id="@+id/fiturVitalitasBahasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparansi"
+                android:contentDescription="siniar bahasa"
+                android:src="@drawable/ic_siniarbahasa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fiturVitalitasBahasa"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Siniar \nBahasa"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+
+    </GridLayout>
+</LinearLayout>

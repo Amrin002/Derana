@@ -12,62 +12,69 @@
         android:layout_height="100dp"
         android:background="#00A4DE"
         android:id="@+id/ly">
+
         <LinearLayout
-            android:layout_centerHorizontal="true"
-            android:layout_width="330dp"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:layout_width="345dp"
+
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
             android:layout_marginTop="30dp"
             android:background="@drawable/background_tab_berandap"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
             <Button
-                android:layout_marginLeft="8dp"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
+                android:elegantTextHeight="true"
+                android:id="@+id/tabBtnBeranda"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/bg_btntab"
+                android:fontFamily="@font/jakartabold"
                 android:text="Beranda"
-                android:textSize="10dp"
                 android:textAllCaps="false"
                 android:textColor="@color/biru"
-                android:fontFamily="@font/jakartabold"
-                android:id="@+id/tabBtnBeranda"
-                android:background="@drawable/backgroundbutton_email_signup"/>
-            <Button
+                android:textSize="13dp" />
 
-                android:fontFamily="@font/jakartabold"
-                android:textColor="@color/white"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:textSize="10dp"
-                android:textAllCaps="false"
-                android:text="Statistik"
+            <Button
+                android:elegantTextHeight="true"
                 android:id="@+id/tabbtnStatistik"
-                android:background="@color/transparansi"/>
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/transparansi"
+                android:fontFamily="@font/jakartabold"
+                android:text="Statistik"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
 
             <Button
-
-                android:fontFamily="@font/jakartabold"
-                android:textColor="@color/white"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:textSize="10dp"
-                android:textAllCaps="false"
-                android:text="Chat"
+                android:elegantTextHeight="true"
                 android:id="@+id/tabbtnChat"
-                android:background="@color/transparansi"/>
-            <Button
-
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/transparansi"
                 android:fontFamily="@font/jakartabold"
-                android:textColor="@color/white"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:textSize="10dp"
+                android:text="Chat"
                 android:textAllCaps="false"
-                android:text="Lapor"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+            <Button
+                android:elegantTextHeight="true"
                 android:id="@+id/tabbtnLapor"
-                android:background="@color/transparansi"/>
-
-
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparansi"
+                android:fontFamily="@font/jakartabold"
+                android:text="Lapor"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
 
 
         </LinearLayout>

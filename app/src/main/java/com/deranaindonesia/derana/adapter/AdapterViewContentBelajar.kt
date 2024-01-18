@@ -3,7 +3,7 @@ package com.deranaindonesia.derana.adapter
 import android.view.ViewGroup
 import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.RecyclerView
-import com.deranaindonesia.derana.datacontentbelajar.ContentBelajar
+import com.deranaindonesia.derana.datacontent.ContentBelajar
 
 class AdapterViewContentBelajar(private val itemClickListener: OnItemClickListener) :
     RecyclerView.Adapter<ContentBelajarHolder>() {

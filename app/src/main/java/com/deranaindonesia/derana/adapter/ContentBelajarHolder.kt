@@ -9,7 +9,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.deranaindonesia.derana.R
-import com.deranaindonesia.derana.datacontentbelajar.ContentBelajar
+import com.deranaindonesia.derana.datacontent.ContentBelajar
 
 class ContentBelajarHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val idBahasaTextView: TextView = itemView.findViewById(R.id.idBahasa)

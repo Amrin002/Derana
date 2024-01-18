@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 import com.deranaindonesia.derana.R
+import com.deranaindonesia.derana.adapter.AdapterContentBerita
 import com.deranaindonesia.derana.adapter.AdapterViewContentBelajar
-import com.deranaindonesia.derana.datacontentbelajar.ContentBelajar
-
+import com.deranaindonesia.derana.datacontent.ContentBelajar
+import com.deranaindonesia.derana.datacontent.ContentBerita
+import com.deranaindonesia.derana.fragmentberanda.berandabottomsheet.FiturBottomSheet
 
 
 class BerandaFragment : Fragment(R.layout.fragment_beranda) {
@@ -30,6 +32,7 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
     private lateinit var btnBukuDigital : ImageButton
     private lateinit var btnLainnya : ImageButton
     private lateinit var rvVideoBelajar : RecyclerView
+    private lateinit var rvBerita : RecyclerView
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,8 +41,13 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
 
         btnLainnya = view.findViewById(R.id.btnLainnya)
         btnLainnya.setOnClickListener {
-            // set klik nya
-         }
+            val bottomSheetFragment = FiturBottomSheet()
+            bottomSheetFragment.show(parentFragmentManager, bottomSheetFragment.tag)
+        }
+
+        btnProfil = view.findViewById(R.id.profilUser)
+
+
 
         // Initialize RecyclerView
         rvVideoBelajar = view.findViewById(R.id.rvVideoBelajar)
@@ -54,6 +62,11 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
             }
         })
 
+        btnKBBI = view.findViewById(R.id.btnKBBI)
+        btnKBBI.setOnClickListener {
+
+        }
+
 
 
         // Set the adapter to the RecyclerView
@@ -63,8 +76,32 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
 
         adapter.setItems(contentList)
 
+
+
+        rvBerita = view.findViewById(R.id.rvBerita)
+        val layoutManagerberita =  LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        val adapter1 = AdapterContentBerita(itemClickListener = object : AdapterView.OnItemClickListener {
+            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                // Implementasi aksi yang diinginkan saat item diklik
+            }
+        })
+        rvBerita.adapter = adapter1
+
+        rvBerita.layoutManager = layoutManagerberita
+        val contentlistBerita = generateSampleContentBerita()
+
+        adapter1.setItems1(contentlistBerita)
+
+
     }
 
+    private fun generateSampleContentBerita(): List<ContentBerita> {
+        return listOf(
+            ContentBerita(R.drawable.paknadim, "Generasi Muda Unggul Kunci Kemajuan Bangsa", "Peringatan Hari Anak Nasional (HAN) 2022 menjadi salah satu agenda dalam acara..."),
+            ContentBerita(R.drawable.paknadim2, "Kemdikbudristek Dukung Digitalisasi Pendidikan", "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek)...")
+        )
+
+    }
 
 
     private fun generateSampleContent(): List<ContentBelajar> {
