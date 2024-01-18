@@ -139,3 +139,11 @@ Lapp/src/main/java/com/deranaindonesia/derana/adapter/AdapterContentBerita.kt,d
 Xapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/KBBIFragment.kt,9\3\931d93f65842eb57b37e4614102fefb94ea5e6ac
 “
 capp/src/main/java/com/deranaindonesia/derana/fragmentberanda/berandabottomsheet/FiturBottomSheet.kt,0\6\06c9290b2889c65a80d249c5ce991536c1673f66
+—
+gapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragmentkbbi/BidangFragment.kt,4\2\42a149e103816d1de92d71a85b872dbfe34e8428
+—
+gapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragmentkbbi/BahasaFragment.kt,f\b\fb331ae474bd6dd54dc474208e97b9a89bebb2ef
+–
+fapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragmentkbbi/RagamFragment.kt,9\b\9b09a268fd60cff0cc1e64a4e32711fbed9d2303
+š
+japp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragmentkbbi/KelasKataFragment.kt,7\0\70d2df904d1f90596da4b85d7d984de3184c2732
