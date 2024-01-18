@@ -36,6 +36,7 @@
             android:background="@drawable/button62"
 
             android:text="   +62"
+            android:textColor="@color/black"
             android:elegantTextHeight="true"
             android:fontFamily="@font/jakartabold"
             android:drawableLeft="@drawable/ic_bendera"
