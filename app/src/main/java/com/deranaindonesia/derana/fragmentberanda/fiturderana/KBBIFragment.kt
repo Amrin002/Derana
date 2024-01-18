@@ -40,18 +40,56 @@ class KBBIFragment : Fragment(R.layout.fragment_kbbi) {
     }
     private fun tabKelasKata() {
         replaceFragment(KelasKataFragment())
+        btnKelasKata.setTextColor(resources.getColor(R.color.black))
+        btnKelasKata.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnBidang.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBidang.setBackgroundResource(R.color.transparansi)
+        btnRagam.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnRagam.setBackgroundResource(R.color.transparansi)
+        btnBahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBahasa.setBackgroundResource(R.color.transparansi)
+
+
     }
 
     private fun tabRagam() {
         replaceFragment(RagamFragment())
+        btnRagam.setTextColor(resources.getColor(R.color.black))
+        btnRagam.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnBidang.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBidang.setBackgroundResource(R.color.transparansi)
+        btnKelasKata.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnKelasKata.setBackgroundResource(R.color.transparansi)
+        btnBahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBahasa.setBackgroundResource(R.color.transparansi)
     }
 
     private fun tabBahasa() {
         replaceFragment(BahasaFragment())
+        btnBahasa.setTextColor(resources.getColor(R.color.black))
+        btnBahasa.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnBidang.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBidang.setBackgroundResource(R.color.transparansi)
+        btnRagam.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnRagam.setBackgroundResource(R.color.transparansi)
+        btnKelasKata.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnKelasKata.setBackgroundResource(R.color.transparansi)
     }
 
     private fun tabBidang() {
         replaceFragment(BidangFragment())
+        btnBidang.setTextColor(resources.getColor(R.color.black))
+        btnBidang.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnKelasKata.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnKelasKata.setBackgroundResource(R.color.transparansi)
+        btnRagam.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnRagam.setBackgroundResource(R.color.transparansi)
+        btnBahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnBahasa.setBackgroundResource(R.color.transparansi)
     }
 
     private fun replaceFragment(fragment: Fragment) {

@@ -11,6 +11,7 @@
 
         android:orientation="vertical">
 
+
     <LinearLayout
         android:layout_weight="0"
         android:layout_width="match_parent"
@@ -21,8 +22,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/kelaskata"
             android:text="Kelas kata"
+            android:background="@drawable/bg_tabkbbiactivated"
             android:fontFamily="@font/jakartabold"
             android:textSize="15sp"
+            android:paddingBottom="10dp"
             android:onClick="kelaskata"
             android:textColor="@color/black"/>
 
@@ -30,23 +33,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ragam"
+            android:paddingBottom="10dp"
             android:text="Ragam"
             android:textSize="15sp"
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/jakartareguler"
-            android:textColor="@color/black"
+            android:textColor="@color/tabkbbinotactivated"
             android:onClick="ragam"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bahasa"
+            android:paddingBottom="10dp"
             android:text="Bahasa"
             android:textSize="15sp"
             android:fontFamily="@font/jakartareguler"
-            android:textColor="@color/black"
+            android:textColor="@color/tabkbbinotactivated"
             android:layout_marginLeft="15dp"
             android:onClick="bahasa"/>
         <TextView
+            android:paddingBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bidang"
@@ -54,7 +60,7 @@
             android:text="Bidang"
             android:textSize="15sp"
             android:fontFamily="@font/jakartareguler"
-            android:textColor="@color/black"
+            android:textColor="@color/tabkbbinotactivated"
             android:onClick="bidang"/>
 
 
