@@ -35,7 +35,7 @@ class KelasKataFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kelaskata, container, false)
+        return inflater.inflate(R.layout.fragment_kbbi_kelas_kata, container, false)
     }
 
     companion object {

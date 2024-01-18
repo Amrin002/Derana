@@ -35,7 +35,7 @@ class BidangFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bidang, container, false)
+        return inflater.inflate(R.layout.fragment_kbbi_bidang, container, false)
     }
 
     companion object {

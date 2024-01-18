@@ -23,7 +23,7 @@
             android:id="@+id/kelaskata"
             android:text="Kelas kata"
             android:background="@drawable/bg_tabkbbiactivated"
-            android:fontFamily="@font/jakartabold"
+            android:fontFamily="@font/jakartareguler"
             android:textSize="15sp"
             android:paddingBottom="10dp"
             android:onClick="kelaskata"

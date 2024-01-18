@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentberanda.fiturderana.fragmentkbbi.RagamFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:id="@+id/logofiturkbbi"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logoderana"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KBBI V"
+                android:textSize="16sp"
+                android:layout_below="@id/logofiturkbbi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/jakartabold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kamus Besar Bahasa Indonesia Edisi Kelima"
+                android:layout_below="@id/logofiturkbbi"
+                android:fontFamily="@font/jakartabold"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="50dp"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Aplikasi luring resmi Badan Pengembangan Bahasa dan Pebukuan, Kementerian Pendidikan dan Kebudayaan Republik Indonesia"
+                android:textAlignment="center"
+                android:textColor="#585858"
+                android:textSize="11sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_search"
+                android:hint="Cari kata yang ingin kamu temukan"
+                android:textSize="12sp"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:maxLength="50"
+                android:fontFamily="@font/jakartareguler"
+                android:paddingLeft="15sp"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="40dp"
+                android:drawableStart="@drawable/ic_search" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
