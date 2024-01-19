@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_peta_bahasa">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoPeta"
+        android:src="@drawable/peta_kotaambon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namaKota"
+        android:text="Kota Ambon"
+        android:fontFamily="@font/jakartabold"
+        android:textColor="@color/black"
+        android:textSize="13dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jumlahBahasa"
+        android:text="1 Bahasa"
+        android:fontFamily="@font/jakartareguler"
+        android:textSize="10dp"
+        android:textColor="@color/black"/>
+</LinearLayout>

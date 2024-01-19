@@ -80,6 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none|vertical"
+        android:layout_marginTop="25dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -112,9 +113,37 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Penelitian pemetaan bahasa di Indonesia dilaksanakan Badan Pengembangan Bahasa dan Perbukuan, Kementerian Pendidikan dan Kebudayaan sejak tahun 1991 hingga 2019. Bahasa daerah (tidak termasuk dialek dan subdialek) di Indonesia yang telah diidentifikasi dan divalidasi sebanyak 718 bahasa dari 2.560 daerah pengamatan."
-
-                    android:textColor="@color/black" />
+                    android:textColor="#585858"/>
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Peta bahasa berdasarkan kabupaten"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pelajari peta persebaran bahasa-bahasa daerah berdasarkan kabupaten yang terdapat di Provinsi Maluku"/>
+            </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rvPetabahasa"/>
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
