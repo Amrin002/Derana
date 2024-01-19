@@ -5,56 +5,44 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ImageButton
+import android.widget.Spinner
 import com.deranaindonesia.derana.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class KamusBahasaFragment : Fragment(R.layout.fragment_fitur_kamusbahasa) {
+    private lateinit var btnSwitchLang: ImageButton
 
-/**
- * A simple [Fragment] subclass.
- * Use the [KamusBahasaFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class KamusBahasaFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private val options = arrayOf("Indonesia", "Seram", "Asilulu")
+    private val options2 = arrayOf("Asilulu", "Seram", "Indonesia")
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        btnSwitchLang = view.findViewById(R.id.btnSwitchLang)
+
+        // Spinner 1
+        val spinner1: Spinner = view.findViewById(R.id.translate1)
+        val adapter1 = ArrayAdapter(requireContext(), R.layout.bahasa_translate, options)
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner1.adapter = adapter1
+
+        // Spinner 2
+        val spinner2: Spinner = view.findViewById(R.id.translate2)
+        val adapter2 = ArrayAdapter(requireContext(), R.layout.bahasa_translate, options2)
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner2.adapter = adapter2
+
+        // ImageButton onClickListener
+        btnSwitchLang.setOnClickListener {
+            // Simpan item yang dipilih di setiap Spinner
+            val selectedItem1 = spinner1.selectedItem
+            val selectedItem2 = spinner2.selectedItem
+
+            // Tukar item yang dipilih di dalam Spinner 1 dan Spinner 2
+            spinner1.setSelection(options2.indexOf(selectedItem2))
+            spinner2.setSelection(options.indexOf(selectedItem1))
         }
     }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fitur_kamusbahasa, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment KamusBahasaFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            KamusBahasaFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }
+

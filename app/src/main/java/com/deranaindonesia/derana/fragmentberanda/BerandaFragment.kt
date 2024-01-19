@@ -19,6 +19,7 @@ import com.deranaindonesia.derana.datacontent.ContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBerita
 import com.deranaindonesia.derana.fragmentberanda.berandabottomsheet.FiturBottomSheet
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.KBBIFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.KamusBahasaFragment
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.PetaBahasaFragment
 
 
@@ -40,6 +41,7 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
 
         btnLainnya = view.findViewById(R.id.btnLainnya)
@@ -75,6 +77,10 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
             openPetaBahasaFragment()
         }
 
+        btnKamusBahasa = view.findViewById(R.id.btnKamusBahasa)
+        btnKamusBahasa.setOnClickListener {
+            openKamusBahasaFragment()
+        }
 
 
         // Set the adapter to the RecyclerView
@@ -101,6 +107,15 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
         adapter1.setItems1(contentlistBerita)
 
 
+    }
+
+    private fun openKamusBahasaFragment() {
+        val fragmentManager : FragmentManager = requireActivity().supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        val kamusbahasaFragment = KamusBahasaFragment()
+        fragmentTransaction.replace(R.id.tab, kamusbahasaFragment)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 
     private fun openPetaBahasaFragment() {

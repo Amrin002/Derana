@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:background="@drawable/bg_selector_translate">
+    <Spinner
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:id="@+id/translate1"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_btn_switchlanguage"
+        android:background="@color/transparansi"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSwitchLang"/>
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:id="@+id/translate2"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
