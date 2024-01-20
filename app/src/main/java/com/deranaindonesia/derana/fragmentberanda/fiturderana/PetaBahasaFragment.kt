@@ -39,7 +39,9 @@ class PetaBahasaFragment : Fragment(R.layout.fragment_fitur_petabahasa) {
             ListPetaBahasa(R.drawable.peta_kotaambon, "Kota Ambon", "1 Bahasa"),
             ListPetaBahasa(R.drawable.peta_kotatual, "Kota Tual", "2 Bahasa"),
 
-        )
+            )
+
+
 
     }
 }
