@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentberanda.fiturderana.SiniarBahasaFragment"
+    android:background="@color/white"
+    android:layout_marginHorizontal="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<include layout="@layout/_ly_beranda_fitur_siniarbahasa_search"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SBForyou"
+                    android:text="Untuk kamu"
+                    android:background="@drawable/bg_tabkbbiactivated"
+                    android:fontFamily="@font/jakartareguler"
+                    android:textSize="15sp"
+                    android:paddingBottom="10dp"
+                    android:onClick="foryou"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SBbahasa"
+                    android:paddingBottom="10dp"
+                    android:text="Bahasa"
+                    android:layout_marginRight="12dp"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/jakartareguler"
+                    android:textColor="@color/tabkbbinotactivated"
+                    android:onClick="bahasa"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SBsastra"
+                    android:layout_marginRight="12dp"
+                    android:paddingBottom="10dp"
+                    android:text="Sastra"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/jakartareguler"
+                    android:textColor="@color/tabkbbinotactivated"
+                    android:layout_marginLeft="15dp"
+                    android:onClick="sastra"/>
+                <TextView
+                    android:paddingBottom="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SBlinguistik"
+                    android:layout_marginLeft="15sp"
+                    android:text="Linguistik"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/jakartareguler"
+                    android:textColor="@color/tabkbbinotactivated"
+                    android:onClick="linguistik"/>
+                <TextView
+                    android:paddingBottom="10dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SBkebudayaan"
+                    android:layout_marginLeft="15sp"
+                    android:text="Kebudayaan"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/jakartareguler"
+                    android:textColor="@color/tabkbbinotactivated"
+                    android:onClick="kebudayaan"/>
+
+
+            </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fcvSiniarbahasa"/>
+
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -2,59 +2,126 @@ package com.deranaindonesia.derana.fragmentberanda.fiturderana
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.FragmentTransaction
 import com.deranaindonesia.derana.R
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentsiniarbahasa.BahasaFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentsiniarbahasa.ForyouFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentsiniarbahasa.KebudayaanFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentsiniarbahasa.LinguistikFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.fragmentsiniarbahasa.SastraFragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class SiniarBahasaFragment : Fragment(R.layout.fragment_siniarbahasa) {
+    private lateinit var btnUntukkamu : TextView
+    private lateinit var btnSBbahasa : TextView
+    private lateinit var btnSBsastra : TextView
+    private lateinit var btnSBlinguistik : TextView
+    private lateinit var btnSBkebudayaan : TextView
 
-/**
- * A simple [Fragment] subclass.
- * Use the [SiniarBahasaFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class SiniarBahasaFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+        btnUntukkamu = view.findViewById(R.id.SBForyou)
+        btnUntukkamu.setOnClickListener {
+            tabforyou()
         }
+        btnSBbahasa = view.findViewById(R.id.SBbahasa)
+        btnSBbahasa.setOnClickListener {
+            tabbahasa()
+        }
+        btnSBkebudayaan = view.findViewById(R.id.SBkebudayaan)
+        btnSBkebudayaan.setOnClickListener {
+            tabkebudayaan()
+        }
+        btnSBsastra = view.findViewById(R.id.SBsastra)
+        btnSBsastra.setOnClickListener {
+            tabsastra()
+        }
+        btnSBlinguistik = view.findViewById(R.id.SBlinguistik)
+        btnSBlinguistik.setOnClickListener {
+            tablinguistik()
+        }
+        tabforyou()
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragmentsiniarbahasa, container, false)
+    private fun tabforyou() {
+        replaceFragment(ForyouFragment())
+        btnUntukkamu.setTextColor(resources.getColor(R.color.black))
+        btnUntukkamu.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnSBbahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBbahasa.setBackgroundResource(R.color.transparansi)
+        btnSBsastra.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBsastra.setBackgroundResource(R.color.transparansi)
+        btnSBlinguistik.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBlinguistik.setBackgroundResource(R.color.transparansi)
+        btnSBkebudayaan.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBkebudayaan.setBackgroundResource(R.color.transparansi)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SiniarBahasaFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SiniarBahasaFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun tabbahasa() {
+        replaceFragment(BahasaFragment())
+        btnSBbahasa.setTextColor(resources.getColor(R.color.black))
+        btnSBbahasa.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnUntukkamu.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnUntukkamu.setBackgroundResource(R.color.transparansi)
+        btnSBsastra.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBsastra.setBackgroundResource(R.color.transparansi)
+        btnSBlinguistik.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBlinguistik.setBackgroundResource(R.color.transparansi)
+        btnSBkebudayaan.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBkebudayaan.setBackgroundResource(R.color.transparansi)
+    }
+
+    private fun tabsastra() {
+        replaceFragment(SastraFragment())
+        btnSBsastra.setTextColor(resources.getColor(R.color.black))
+        btnSBsastra.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnUntukkamu.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnUntukkamu.setBackgroundResource(R.color.transparansi)
+        btnSBbahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBbahasa.setBackgroundResource(R.color.transparansi)
+        btnSBlinguistik.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBlinguistik.setBackgroundResource(R.color.transparansi)
+        btnSBkebudayaan.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBkebudayaan.setBackgroundResource(R.color.transparansi)
+    }
+
+    private fun tablinguistik() {
+        replaceFragment(LinguistikFragment())
+        btnSBlinguistik.setTextColor(resources.getColor(R.color.black))
+        btnSBlinguistik.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnUntukkamu.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnUntukkamu.setBackgroundResource(R.color.transparansi)
+        btnSBbahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBbahasa.setBackgroundResource(R.color.transparansi)
+        btnSBsastra.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBsastra.setBackgroundResource(R.color.transparansi)
+        btnSBkebudayaan.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBkebudayaan.setBackgroundResource(R.color.transparansi)
+    }
+
+    private fun tabkebudayaan() {
+        replaceFragment(KebudayaanFragment())
+        btnSBkebudayaan.setTextColor(resources.getColor(R.color.black))
+        btnSBkebudayaan.setBackgroundResource(R.drawable.bg_tabkbbiactivated)
+
+        btnUntukkamu.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnUntukkamu.setBackgroundResource(R.color.transparansi)
+        btnSBbahasa.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBbahasa.setBackgroundResource(R.color.transparansi)
+        btnSBsastra.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBsastra.setBackgroundResource(R.color.transparansi)
+        btnSBlinguistik.setTextColor(resources.getColor(R.color.tabkbbinotactivated))
+        btnSBlinguistik.setBackgroundResource(R.color.transparansi)
+    }
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction : FragmentTransaction = childFragmentManager.beginTransaction()
+        transaction.replace(R.id.fcvSiniarbahasa,fragment)
+        transaction.commit()
     }
 }

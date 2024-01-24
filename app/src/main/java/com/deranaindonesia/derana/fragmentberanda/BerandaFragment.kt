@@ -18,10 +18,10 @@ import com.deranaindonesia.derana.adapter.AdapterViewContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBelajar
 import com.deranaindonesia.derana.datacontent.ContentBerita
 import com.deranaindonesia.derana.fragmentberanda.berandabottomsheet.FiturBottomSheet
-import com.deranaindonesia.derana.fragmentberanda.fiturderana.DataBahasaFragment
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.KBBIFragment
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.KamusBahasaFragment
 import com.deranaindonesia.derana.fragmentberanda.fiturderana.PetaBahasaFragment
+import com.deranaindonesia.derana.fragmentberanda.fiturderana.SiniarBahasaFragment
 
 
 class BerandaFragment : Fragment(R.layout.fragment_beranda) {
@@ -82,9 +82,9 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
         btnKamusBahasa.setOnClickListener {
             openKamusBahasaFragment()
         }
-        btnDataBahasa = view.findViewById(R.id.btnDataBahasa)
-        btnDataBahasa.setOnClickListener {
-            openDatabahasaFragment()
+        btnSiniarBahasa = view.findViewById(R.id.btnSiniarBahasa)
+        btnSiniarBahasa.setOnClickListener {
+            openSiniarbahasaFragment()
         }
 
 
@@ -114,11 +114,11 @@ class BerandaFragment : Fragment(R.layout.fragment_beranda) {
 
     }
 
-    private fun openDatabahasaFragment() {
+    private fun openSiniarbahasaFragment() {
         val fragmentManager : FragmentManager = requireActivity().supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        val databahasaFragment = DataBahasaFragment()
-        fragmentTransaction.replace(R.id.tab, databahasaFragment)
+        val siniarbahasaFragment = SiniarBahasaFragment()
+        fragmentTransaction.replace(R.id.tab, siniarbahasaFragment)
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }

@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.deranaindonesia.derana.R
+import com.deranaindonesia.derana.dataclassderana.ListPetaBahasa
 
 
 class ListPetaBahasaViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){

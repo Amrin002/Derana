@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/siniarbahasa1"
+            android:id="@+id/gambarkonten_SB"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vitalitas Bahasa di Wilayah Timur"
+                android:fontFamily="@font/jakartabold"
+                android:textSize="14.8sp"
+                android:textColor="@color/black"
+                android:id="@+id/jdlkonten_SB"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 jam yang lalu"
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:id="@+id/latestupdateSB"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kantor Bahasa Provinsi Maluku"
+        android:fontFamily="@font/jakartabold"
+        android:textColor="@color/black"
+        android:textSize="14.8sp"
+        android:id="@+id/iduploaderSB"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bahasa daerah merupakan bahasa yang menjadikan jati diri dari penutur asli dari sebuah wilayah..."
+        android:fontFamily="@font/jakartareguler"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/deskripsiSB"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/durasiSB"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_durasi"
+            android:paddingLeft="5dp"
+            android:elegantTextHeight="true"
+            android:paddingHorizontal="5dp"
+            android:drawableLeft="@drawable/playbtn"
+            android:fontFamily="@font/jakartareguler"
+            android:text=" 125 menit"
+            android:textColor="@color/black" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp">
+        <ImageButton
+            android:id="@+id/addPlaylistSB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_playlist"
+            android:layout_centerVertical="true"
+            android:background="@color/transparansi"/>
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/btnunduh"
+        android:id="@+id/btnUnduhSB"
+        android:layout_centerVertical="true"
+        android:background="@color/transparansi"
+        android:layout_marginLeft="50dp"
+        />
+</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
