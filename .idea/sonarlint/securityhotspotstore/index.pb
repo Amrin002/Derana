@@ -157,3 +157,5 @@ Papp/src/main/java/com/deranaindonesia/derana/adapter/ListPetaBahasaViewHolder.k
 Mapp/src/main/java/com/deranaindonesia/derana/adapter/AdapterListPetaBahasa.kt,f\d\fddd765f8ceb13e0a96d505291f8fee0a4a450c0
 
 `app/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/SiniarBahasaFragment.kt,a\c\ac179abd5be6bdc71a05c8ff3e4a905030332614
+
+^app/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/DataBahasaFragment.kt,0\5\05f8256975e40e7851df35d70fa35c79c08b7668

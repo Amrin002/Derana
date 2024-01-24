@@ -3,12 +3,280 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentberanda.StatistikFragment">
+    tools:context=".fragmentberanda.StatistikFragment"
+    android:layout_marginHorizontal="20dp">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+     <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="none|vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="20dp"
+             android:orientation="vertical">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartabold"
+                     android:text="Statistik bahasa daerah berdasarkan dengan kategori"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="16dp"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartareguler"
+                     android:text="Pilih bahasa daerah yang ingin kamu ketahui statistik bahasanya"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="12dp"/>
+             </RelativeLayout>
+             </LinearLayout>
+             <HorizontalScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 >
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="20dp"
+                     >
+                     <RelativeLayout
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginLeft="-10dp"
+
+                         >
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_centerInParent="true"
+                                 android:src="@drawable/ic_jumlah_penutur" />
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textAlignment="center"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="50dp"
+                             android:layout_marginHorizontal="20dp"
+                             android:fontFamily="@font/jakartareguler"
+                             android:text="Jumlah Penutur"/>
+
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginLeft="-10dp"
+
+                         >
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerInParent="true"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="10dp"
+                                 android:src="@drawable/ic_data_bahasa" />
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textAlignment="center"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="50dp"
+                             android:layout_marginHorizontal="20dp"
+                             android:fontFamily="@font/jakartareguler"
+                             android:text="Data bahasa"/>
+
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginLeft="-10dp"
+
+                         >
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerInParent="true"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="10dp"
+                                 android:src="@drawable/ic_peta_bahasa" />
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textAlignment="center"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="50dp"
+                             android:layout_marginHorizontal="20dp"
+                             android:fontFamily="@font/jakartareguler"
+                             android:text="Peta bahasa"/>
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginLeft="-10dp"
+
+                         >
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerInParent="true"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="10dp"
+                                 android:src="@drawable/ic_data_bahasa" />
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textAlignment="center"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="50dp"
+                             android:layout_marginHorizontal="20dp"
+                             android:fontFamily="@font/jakartareguler"
+                             android:text="Data bahasa"/>
+
+                     </RelativeLayout>
+                     <RelativeLayout
+                         android:layout_width="100dp"
+                         android:layout_height="100dp"
+                         android:layout_marginLeft="-10dp"
+
+                         >
+                         <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_centerInParent="true"
+                                 android:layout_marginLeft="10dp"
+                                 android:layout_marginTop="10dp"
+                                 android:src="@drawable/ic_vitalisasi_bahasa" />
+                         </RelativeLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:textAlignment="center"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginTop="50dp"
+                             android:layout_marginHorizontal="20dp"
+                             android:fontFamily="@font/jakartareguler"
+                             android:text="Data bahasa"/>
+
+                     </RelativeLayout>
+                 </LinearLayout>
+             </HorizontalScrollView>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartabold"
+                     android:text="Ayo, cari statistik bahasa daerah yang kamu tuturkan"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="16dp"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartareguler"
+                     android:text="Pilih bahasa daerah yang ingin kamu ketahui statistik bahasanya"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="12dp"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartabold"
+                     android:text="Infografik bahasa daerah di Provinsi Maluku"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="16dp"/>
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp">
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:fontFamily="@font/jakartareguler"
+                     android:text="Menampilkan jumlah presentase data bahasa per kabupaten di Provinsi Maluku"
+                     android:textAlignment="viewStart"
+                     android:textColor="@color/black"
+                     android:textSize="12dp"/>
+             </RelativeLayout>
+         </LinearLayout>
+
+     </androidx.core.widget.NestedScrollView>
+ </LinearLayout>
 
 </FrameLayout>
