@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.deranaindonesia.derana.R
 import com.deranaindonesia.derana.adapter.AdapterListPetaBahasa
-import com.deranaindonesia.derana.adapter.ListPetaBahasa
+import com.deranaindonesia.derana.dataclassderana.ListPetaBahasa
 
 class PetaBahasaFragment : Fragment(R.layout.fragment_fitur_petabahasa) {
     private lateinit var recyclerViewPeta: RecyclerView

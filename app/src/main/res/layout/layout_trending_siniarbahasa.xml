@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trending1"
+        android:id="@+id/gbrTrending"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vitalitas Bahasa di Wilayah Timur"
+        android:fontFamily="@font/jakartabold"
+        android:textSize="14.5sp"
+        android:textAlignment="center"
+        android:id="@+id/jdlTrending"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kantor Bahasa..."
+        android:fontFamily="@font/jakartalight"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:id="@+id/isiTrending"
+        />
+
+
+</LinearLayout>
