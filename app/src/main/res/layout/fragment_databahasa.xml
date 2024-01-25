@@ -146,7 +146,7 @@
                             android:layout_centerVertical="true"
                             android:text="BA"
                             android:textAlignment="center"
-                            android:textColor="@color/birumuda"
+                            android:textColor="#00A4DE"
                             android:textSize="15sp" />
                     </RelativeLayout>
 
@@ -208,7 +208,7 @@
 
                             android:text="BK"
                             android:textAlignment="center"
-                            android:textColor="@color/birumuda"
+                            android:textColor="#00A4DE"
                             android:textSize="14sp" />
                     </RelativeLayout>
 
@@ -220,17 +220,17 @@
                             android:fontFamily="@font/jakartareguler"
                             android:text="Kei"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dim_13" />
+                            android:textSize="13sp" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="1"
-                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_marginLeft="@dimen/dim_50"
                         android:layout_rowSpan="2">
                         <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
                             android:id="@+id/DB2"
                             android:background="@drawable/bg_bahasa1">
 
@@ -239,10 +239,10 @@
                                 android:layout_height="wrap_content"
 
                                 android:layout_centerInParent="true"
+                                android:textColor="#34A853"
                                 android:text="BK"
-
                                 android:textAlignment="center"
-                                android:textSize="@dimen/dim_25" />
+                                android:textSize="14sp" />
                         </RelativeLayout>
                         <TextView
                             android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                             android:text="Kur"
                             android:layout_below="@id/DB2"
                             android:layout_centerInParent="true"
-                            android:textSize="@dimen/dim_13"
+                            android:textSize="13sp"
                             android:textColor="@color/black"
                             android:fontFamily="@font/jakartareguler"
                             />
@@ -265,16 +265,16 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/dim_30"
                     android:background="@color/birumuda"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/dim_20"
                     >
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/jakartareguler"
-                        android:paddingHorizontal="20dp"
-                        android:paddingTop="3dp"
+                        android:paddingHorizontal="@dimen/dim_20"
+                        android:paddingTop="@dimen/dim_3"
                         android:layout_centerHorizontal="true"
                         android:text="Kabupaten Buru Selatan"
                         android:textColor="@color/black"
@@ -283,8 +283,8 @@
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginHorizontal="@dimen/dim_20"
                     android:columnCount="2"
                     android:rowCount="2"
                     >
@@ -294,8 +294,8 @@
                         android:layout_columnSpan="1"
                         android:layout_rowSpan="1">
                         <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
                             android:id="@+id/DB3"
                             android:background="@drawable/bg_bahasa">
 
@@ -306,8 +306,8 @@
                                 android:layout_centerInParent="true"
                                 android:text="BA"
                                 android:textAlignment="center"
-                                android:textColor="@color/birumuda"
-                                android:textSize="25sp" />
+                                android:textColor="#00A4DE"
+                                android:textSize="14sp" />
                         </RelativeLayout>
 
                         <TextView
@@ -318,13 +318,13 @@
                             android:fontFamily="@font/jakartareguler"
                             android:text="Ambalau"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dim_13" />
+                            android:textSize="13sp" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="1"
-                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_marginLeft="@dimen/dim_50"
                         android:layout_rowSpan="2">
                         <RelativeLayout
                             android:layout_width="@dimen/dim_40"
@@ -335,12 +335,12 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-
+                                android:textColor="#34A853"
                                 android:layout_centerInParent="true"
                                 android:text="BB"
                                 android:textAlignment="center"
 
-                                android:textSize="@dimen/dim_25" />
+                                android:textSize="14sp" />
                         </RelativeLayout>
                         <TextView
                             android:layout_width="wrap_content"
@@ -348,7 +348,7 @@
                             android:text="Buru"
                             android:layout_below="@id/DB4"
                             android:layout_centerInParent="true"
-                            android:textSize="@dimen/dim_13"
+                            android:textSize="13sp"
                             android:textColor="@color/black"
                             android:fontFamily="@font/jakartareguler"
                             />
@@ -362,16 +362,16 @@
                 </GridLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/dim_30"
                     android:background="@color/birumuda"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="@dimen/dim_20"
                     >
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/jakartareguler"
-                        android:paddingHorizontal="20dp"
-                        android:paddingTop="3dp"
+                        android:paddingHorizontal="@dimen/dim_20"
+                        android:paddingTop="@dimen/dim_3"
                         android:layout_centerHorizontal="true"
                         android:text="Kabupaten Maluku Barat Daya"
                         android:textColor="@color/black"
@@ -380,8 +380,8 @@
                 <GridLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginHorizontal="@dimen/dim_20"
                     android:columnCount="4"
                     android:rowCount="4"
                     >
@@ -391,8 +391,8 @@
                         android:layout_columnSpan="1"
                         android:layout_rowSpan="1">
                         <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
                             android:id="@+id/DB5"
                             android:background="@drawable/bg_bahasa">
 
@@ -403,8 +403,8 @@
                                 android:layout_centerInParent="true"
                                 android:text="BD"
                                 android:textAlignment="center"
-                                android:textColor="@color/birumuda"
-                                android:textSize="25sp" />
+                                android:textColor="#00A4DE"
+                                android:textSize="14sp" />
                         </RelativeLayout>
 
                         <TextView
@@ -415,29 +415,28 @@
                             android:fontFamily="@font/jakartareguler"
                             android:text="Damar \n Timur"
                             android:textColor="@color/black"
-                            android:textSize="@dimen/dim_13" />
+                            android:textSize="13sp" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_columnSpan="1"
-                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_marginLeft="@dimen/dim_50"
                         android:layout_rowSpan="2">
                         <RelativeLayout
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
                             android:id="@+id/DB6"
                             android:background="@drawable/bg_bahasa1">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-
                                 android:layout_centerInParent="true"
                                 android:text="BD"
+                                android:textColor="#34A853"
                                 android:textAlignment="center"
-
-                                android:textSize="@dimen/dim_25" />
+                                android:textSize="14sp" />
                         </RelativeLayout>
                         <TextView
                             android:layout_width="wrap_content"
@@ -445,7 +444,7 @@
                             android:text="Dawelor"
                             android:layout_below="@id/DB6"
                             android:layout_centerInParent="true"
-                            android:textSize="@dimen/dim_13"
+                            android:textSize="13sp"
                             android:textColor="@color/black"
                             android:fontFamily="@font/jakartareguler"
                             />
@@ -453,8 +452,40 @@
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_columnSpan="2"
-                        android:layout_row="1">
+                        android:layout_columnSpan="1"
+                        android:layout_marginLeft="@dimen/dim_50"
+                        android:layout_rowSpan="3">
+                        <RelativeLayout
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
+                            android:id="@+id/DB7"
+                            android:background="@drawable/bg_bahasa2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#EE2737"
+                                android:layout_centerInParent="true"
+                                android:text="BD"
+                                android:textAlignment="center"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dawelor"
+                            android:layout_below="@id/DB7"
+                            android:layout_centerInParent="true"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/jakartareguler"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_row="3">
                     </RelativeLayout>
                 </GridLayout>
             </LinearLayout>
