@@ -13,14 +13,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="@dimen/dim_20"
             >
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="@dimen/dim_80"
                 android:id="@+id/logofiturkbbi"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/dim_80"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="@dimen/dim_30"
                 android:src="@drawable/logoderana"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
                 android:textSize="16sp"
                 android:layout_below="@id/logofiturkbbi"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/dim_10"
                 android:fontFamily="@font/jakartabold"
                 android:textColor="@color/black"
                 />
@@ -38,15 +38,15 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/dim_10"
+            android:layout_marginHorizontal="@dimen/dim_20"
             >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginHorizontal="50dp"
+                android:layout_marginHorizontal="@dimen/dim_50"
                 android:fontFamily="@font/jakartareguler"
                 android:text="Masukkan nama bahasa yang ingin kamu cari datanya"
                 android:textAlignment="center"
@@ -56,13 +56,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="@dimen/dim_20"
             >
             <EditText
                 android:id="@+id/etSearch"
                 android:layout_centerHorizontal="true"
-                android:layout_width="300dp"
-                android:layout_height="35dp"
+                android:layout_width="@dimen/dim_300"
+                android:layout_height="@dimen/dim_35"
                 android:background="@drawable/bg_search"
                 android:hint="Masukkan nama bahasa"
                 android:textSize="12sp"
@@ -100,17 +100,363 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
                 </RelativeLayout>
-                
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kota Ambon"
-                    android:paddingHorizontal="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="30dp"
                     android:background="@color/birumuda"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/jakartabold"/>
+                    android:layout_marginTop="20dp"
 
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakartareguler"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Kota Ambon"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:columnCount="1"
+                    android:rowCount="1"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    <RelativeLayout
+                        android:layout_width="@dimen/dim_40"
+                        android:layout_height="@dimen/dim_40"
+                        android:id="@+id/DB0"
+                        android:background="@drawable/bg_bahasa"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="BA"
+                            android:textAlignment="center"
+                            android:textColor="@color/birumuda"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asilulu"
+                        android:layout_below="@id/DB0"
+                        android:layout_centerInParent="true"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/jakartareguler"
+                        />
+                </GridLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_30"
+                    android:background="@color/birumuda"
+                    android:layout_marginTop="@dimen/dim_20"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakartareguler"
+                        android:paddingHorizontal="@dimen/dim_20"
+                        android:paddingTop="@dimen/dim_3"
+                        android:layout_centerHorizontal="true"
+                        android:text="Kota Tual"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dim_20"
+                    android:layout_marginHorizontal="@dimen/dim_20"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="1">
+                    <RelativeLayout
+                        android:layout_width="@dimen/dim_40"
+                        android:layout_height="@dimen/dim_40"
+                        android:id="@+id/DB1"
+                        android:background="@drawable/bg_bahasa">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+
+                            android:text="BK"
+                            android:textAlignment="center"
+                            android:textColor="@color/birumuda"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/DB1"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/jakartareguler"
+                            android:text="Kei"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim_13" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_rowSpan="2">
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/DB2"
+                            android:background="@drawable/bg_bahasa1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:text="BK"
+
+                                android:textAlignment="center"
+                                android:textSize="@dimen/dim_25" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kur"
+                            android:layout_below="@id/DB2"
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/dim_13"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/jakartareguler"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_row="1">
+                    </RelativeLayout>
+                </GridLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/birumuda"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakartareguler"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Kabupaten Buru Selatan"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="1">
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/DB3"
+                            android:background="@drawable/bg_bahasa">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:text="BA"
+                                android:textAlignment="center"
+                                android:textColor="@color/birumuda"
+                                android:textSize="25sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/DB3"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/jakartareguler"
+                            android:text="Ambalau"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim_13" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_rowSpan="2">
+                        <RelativeLayout
+                            android:layout_width="@dimen/dim_40"
+                            android:layout_height="@dimen/dim_40"
+                            android:id="@+id/DB4"
+                            android:background="@drawable/bg_bahasa1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:text="BB"
+                                android:textAlignment="center"
+
+                                android:textSize="@dimen/dim_25" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buru"
+                            android:layout_below="@id/DB4"
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/dim_13"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/jakartareguler"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_row="1">
+                    </RelativeLayout>
+                </GridLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/birumuda"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jakartareguler"
+                        android:paddingHorizontal="20dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="Kabupaten Maluku Barat Daya"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:columnCount="4"
+                    android:rowCount="4"
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="1">
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/DB5"
+                            android:background="@drawable/bg_bahasa">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:text="BD"
+                                android:textAlignment="center"
+                                android:textColor="@color/birumuda"
+                                android:textSize="25sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/DB5"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/jakartareguler"
+                            android:text="Damar \n Timur"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dim_13" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+                        android:layout_marginLeft="@dimen/dim_25"
+                        android:layout_rowSpan="2">
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/DB6"
+                            android:background="@drawable/bg_bahasa1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_centerInParent="true"
+                                android:text="BD"
+                                android:textAlignment="center"
+
+                                android:textSize="@dimen/dim_25" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dawelor"
+                            android:layout_below="@id/DB6"
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/dim_13"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/jakartareguler"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_row="1">
+                    </RelativeLayout>
+                </GridLayout>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
         </FrameLayout>
