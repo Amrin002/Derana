@@ -149,8 +149,6 @@ fapp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragme
 japp/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/fragmentkbbi/KelasKataFragment.kt,7\0\70d2df904d1f90596da4b85d7d984de3184c2732
 
 ^app/src/main/java/com/deranaindonesia/derana/fragmentberanda/fiturderana/PetaBahasaFragment.kt,6\c\6cf351b69e1f2e94982c8aebbd7314e49b18ab9d
-v
-Fapp/src/main/java/com/deranaindonesia/derana/adapter/ListPetaBahasa.kt,2\4\243b3eb9634985e5f9fb01ca764ffe19be89c3a3
 €
 Papp/src/main/java/com/deranaindonesia/derana/adapter/ListPetaBahasaViewHolder.kt,4\2\4239e9e9c40be884e306d0f8a01897790ed066d4
 }
