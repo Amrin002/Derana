@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".OnBoardingActivity"
+
+    android:paddingHorizontal="@dimen/dim_10"
   >
 
     <include layout="@layout/_ly_onboarding_header_login" />
@@ -13,23 +15,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp">
+        android:layout_marginTop="@dimen/dim_13">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:orientation="horizontal"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginBottom="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_10">
 
             <ProgressBar
 
                 android:id="@+id/pb1"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="60dp"
-                android:layout_height="5dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
                 android:indeterminate="false"
                 android:indeterminateDrawable="@drawable/progress_indeterminate"
                 android:progressDrawable="@drawable/progress_horizontal" />
@@ -38,9 +40,9 @@
 
                 android:id="@+id/pb2"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="60dp"
-                android:layout_height="5dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
                 android:indeterminate="false"
                 android:indeterminateDrawable="@drawable/progress_indeterminate"
                 android:progressDrawable="@drawable/progress_horizontal" />
@@ -49,9 +51,9 @@
 
                 android:id="@+id/pb3"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="60dp"
-                android:layout_height="5dp"
-                android:layout_marginRight="20dp"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
                 android:indeterminate="false"
                 android:indeterminateDrawable="@drawable/progress_indeterminate"
                 android:progressDrawable="@drawable/progress_horizontal" />
@@ -59,8 +61,8 @@
             <ProgressBar
                 android:id="@+id/pb4"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="60dp"
-                android:layout_height="5dp"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
                 android:indeterminate="false"
                 android:indeterminateDrawable="@drawable/progress_indeterminate"
 
@@ -70,8 +72,8 @@
 
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_height="400dp"
+        android:layout_marginTop="@dimen/dim_30"
+        android:layout_height="@dimen/dim_400"
         android:id="@+id/viewPager2"/>
     <include layout="@layout/_ly_onboard_masuk"/>
     <include layout="@layout/_ly_onboarding_kebijakan"/>

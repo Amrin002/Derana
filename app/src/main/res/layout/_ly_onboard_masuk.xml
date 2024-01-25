@@ -5,13 +5,13 @@
     android:layout_centerHorizontal="true"
 
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp">
+    android:layout_marginTop="@dimen/dim_20">
 
     <Button
         android:background="@drawable/onboard_buttonmasuk2"
-        android:layout_width="300dp"
+        android:layout_width="@dimen/dim_300"
         android:elegantTextHeight="true"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/dim_50"
         android:text="Masuk"
         android:layout_centerHorizontal="true"
         android:id="@+id/btnMasuk"
@@ -23,11 +23,11 @@
 
     <Button
         android:id="@+id/btnReg"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/dim_300"
+        android:layout_height="@dimen/dim_50"
         android:layout_below="@id/btnMasuk"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dim_20"
         android:background="@drawable/onboard_buttonmasuk"
         android:elegantTextHeight="true"
 

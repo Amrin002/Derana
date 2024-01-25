@@ -22,7 +22,7 @@
         android:textSize="15dp"
         android:id="@+id/txKendala"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:onClick="kendala"/>
 
     <include layout="@layout/_ly_login_button_masuk"/>

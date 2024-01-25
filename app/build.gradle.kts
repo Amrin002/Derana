@@ -56,6 +56,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.hbb20:ccp:2.5.1")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
+    //dimens
+    implementation ("com.intuit.ssp:ssp-android:1.1.0")
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
 
 
 }

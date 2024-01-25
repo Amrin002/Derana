@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
     android:paddingBottom="10dp"
-    android:layout_marginLeft="20dp">
+    android:layout_marginLeft="15dp"
+>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,47 +18,55 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="pelajari bahasa-bahasa di Indonesia"
+            android:text="Pelajari bahasa-bahasa di Indonesia"
             android:fontFamily="@font/jakartareguler"
             android:textColor="#999798"
-            android:textSize="15sp"/>
+            android:textSize="13sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lihat Semua"
             android:fontFamily="@font/jakartabold"
             android:textColor="@color/biru"
-            android:textSize="15sp"
-            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:layout_marginRight="30dp"
             android:id="@+id/seeAll1"/>
     </LinearLayout>
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="12dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
             <Button
-                android:layout_width="120dp"
-                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:elegantTextHeight="true"
+                android:textSize="13sp"
                 android:text="Bahasa daerah"
+
                 android:textColor="@color/white"
-                android:fontFamily="@font/jakartabold"
+                android:fontFamily="@font/jakartareguler"
                 android:textAllCaps="false"
+
                 android:background="@drawable/bg_button_ayobelajar"
                 android:id="@+id/btnBahasa1"
                 android:layout_marginRight="10dp"/>
             <Button
-                android:layout_width="120dp"
-                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:elegantTextHeight="true"
+                android:textSize="13sp"
                 android:text="Bahasa Buru"
                 android:textColor="@color/black"
                 android:fontFamily="@font/jakartareguler"
@@ -66,8 +75,10 @@
                 android:id="@+id/btnBahasa2"
                 android:layout_marginRight="10dp"/>
             <Button
-                android:layout_width="120dp"
-                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:elegantTextHeight="true"
+                android:textSize="13sp"
                 android:text="Bahasa Alune"
                 android:textColor="@color/black"
                 android:fontFamily="@font/jakartareguler"
@@ -76,8 +87,10 @@
                 android:id="@+id/btnBahasa3"
                 android:layout_marginRight="10dp"/>
             <Button
-                android:layout_width="120dp"
-                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:elegantTextHeight="true"
+                android:textSize="13sp"
                 android:text="Bahasa Yatoke"
                 android:textColor="@color/black"
                 android:fontFamily="@font/jakartareguler"
@@ -86,8 +99,10 @@
                 android:id="@+id/btnBahasa4"
                 android:layout_marginRight="10dp"/>
             <Button
-                android:layout_width="120dp"
-                android:layout_height="35dp"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:elegantTextHeight="true"
+                android:textSize="13sp"
                 android:text="Bahasa Dalwone"
                 android:textColor="@color/black"
                 android:fontFamily="@font/jakartareguler"

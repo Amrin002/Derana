@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginLeft="20dp"
+    android:layout_marginLeft="15dp"
     android:layout_marginBottom="10dp"
     >
 
@@ -16,12 +16,13 @@
 
             <EditText
                 android:id="@+id/etSearch"
-                android:layout_width="250dp"
-                android:layout_height="35dp"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
                 android:background="@drawable/bg_search"
                 android:hint="Cari informasi, buku &amp; artikel"
                 android:textSize="13sp"
-                android:textColorHint="@color/black"
+                android:elegantTextHeight="true"
+                android:textColorHint="#999798"
                 android:inputType="text"
                 android:textColor="@color/black"
                 android:maxLength="50"
@@ -34,8 +35,9 @@
         <ImageButton
             android:onClick="profil"
             android:id="@+id/profilUser"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="30dp"
+
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/bg_profil" />

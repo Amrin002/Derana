@@ -3,29 +3,29 @@
     android:layout_width="match_parent"
     android:orientation="horizontal"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="20dp"
-    android:layout_marginTop="20dp"
+    android:layout_marginLeft="@dimen/dim_20"
+    android:layout_marginTop="@dimen/dim_20"
 
     >
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/dim_30"
+        android:layout_height="@dimen/dim_30"
         android:src="@drawable/derana_putih"
         android:id="@+id/iconLogo" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_10">
         <TextView
             android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Derana"
-            android:layout_marginTop="-10sp"
-            android:textSize="18dp"
+            android:layout_marginTop="-10dp"
+            android:textSize="18sp"
             android:fontFamily="@font/jakartabold"/>
 
 

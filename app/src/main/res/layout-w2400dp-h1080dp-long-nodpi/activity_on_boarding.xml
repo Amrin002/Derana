@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OnBoardingActivity"
+
+    android:paddingHorizontal="@dimen/dim_10"
+    >
+
+    <include layout="@layout/_ly_onboarding_header_login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_13">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_10">
+
+            <ProgressBar
+
+                android:id="@+id/pb1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_indeterminate"
+                android:progressDrawable="@drawable/progress_horizontal" />
+
+            <ProgressBar
+
+                android:id="@+id/pb2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_indeterminate"
+                android:progressDrawable="@drawable/progress_horizontal" />
+
+            <ProgressBar
+
+                android:id="@+id/pb3"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:layout_marginRight="@dimen/dim_20"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_indeterminate"
+                android:progressDrawable="@drawable/progress_horizontal" />
+
+            <ProgressBar
+                android:id="@+id/pb4"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dim_60"
+                android:layout_height="@dimen/dim_5"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress_indeterminate"
+
+                android:progressDrawable="@drawable/progress_horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dim_30"
+        android:layout_height="@dimen/dim_400"
+        android:id="@+id/viewPager2"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_20">
+
+        <Button
+            android:background="@drawable/onboard_buttonmasuk2"
+            android:layout_width="@dimen/dim_300"
+            android:elegantTextHeight="true"
+            android:layout_height="@dimen/dim_50"
+            android:text="Masuk"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnMasuk"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/jakartabold"
+            />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="@dimen/dim_300"
+            android:layout_height="@dimen/dim_50"
+            android:layout_below="@id/btnMasuk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_20"
+            android:background="@drawable/onboard_buttonmasuk"
+            android:elegantTextHeight="true"
+
+            android:fontFamily="@font/jakartabold"
+            android:gravity="center"
+            android:text="Belum punya akun? Daftar dulu"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dim_350"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_20"
+        android:layout_marginHorizontal="@dimen/dim_40"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Dengan masuk atau mendaftar, kamu menyetujui"
+            android:fontFamily="@font/jakartalight"
+            android:textSize="13.1sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textColor="@color/white"
+
+                android:fontFamily="@font/jakartabolditalic"
+                android:id="@+id/btnKetentuan"
+                android:onClick="layanan"/>
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dan"
+                android:fontFamily="@font/jakartareguler"
+                android:paddingLeft="@dimen/dim_3"
+                android:paddingRight="@dimen/dim_3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPrivasi"
+                android:text="Privacy Policy"
+                android:textColor="@color/white"
+                android:fontFamily="@font/jakartabolditalic"
+                android:onClick="privasi"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

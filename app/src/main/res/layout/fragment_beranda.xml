@@ -5,12 +5,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".fragmentberanda.BerandaFragment">
+    tools:context=".fragmentberanda.BerandaFragment"
+    >
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbars="none|vertical"
+            android:layout_marginLeft="15dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
@@ -23,13 +25,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_allfitur"
-                    android:visibility="gone"
-                    android:layout_marginLeft="20dp">
+                    android:visibility="gone">
 
                     <FrameLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
                         android:background="@drawable/background_rounded"
                         app:layout_behavior="com.google.android.material.bottomappbar.BottomAppBar$Behavior">
 
@@ -42,12 +42,11 @@
             <androidx.recyclerview.widget.RecyclerView
 
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="150dp"
                 android:id="@+id/rvVideoBelajar"/>
             <include layout="@layout/_ly_beranda_beritahariini"/>
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-
                     android:layout_height="200dp"
                     android:id="@+id/rvBerita"
                     android:layout_marginBottom="50dp"/>
