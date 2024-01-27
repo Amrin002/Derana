@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -8,40 +8,184 @@
     tools:context=".MainActivity"
     android:background="@color/white"
  >
-    <include layout="@layout/_ly_login_header_login"/>
-    <include layout="@layout/_ly_login_masuk"/>
-    <include layout="@layout/_ly_login_nomorhp"/>
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ada kendala dengan No. HP kamu?"
-        android:fontFamily="@font/jakartabold"
-        android:textColor="@color/biru"
-        android:textSize="15dp"
-        android:id="@+id/txKendala"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:onClick="kendala"/>
-
-    <include layout="@layout/_ly_login_button_masuk"/>
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:orientation="vertical"
+        >
+    <include layout="@layout/_ly_login_header_login"/>
+    <include layout="@layout/_ly_login_masuk"/>
+
+
+        <include layout="@layout/_ly_login_nomorhp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ada kendala dengan No. HP kamu?"
+            android:fontFamily="@font/jakartabold"
+            android:textColor="@color/biru"
+            android:textSize="15dp"
+            android:id="@+id/txKendala"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:onClick="kendala"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutmasuk"
+        android:layout_above="@id/txaltlogin"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim_15"
+        >
+
+        <Button
+            android:background="@drawable/buttonmasuk2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Masuk"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnMasuk"
+            android:elegantTextHeight="true"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/jakartabold"/>
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnMasuk"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/biru"
+            android:textAllCaps="false"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/jakartabold"
+            android:text="Belum punya akun? Daftar dulu"
+            android:background="@drawable/buttonmasuk3"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </RelativeLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="atau login menggunakan"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"
+        android:id="@+id/txaltlogin"
+        android:layout_above="@id/relativelayoutalt"
+        android:layout_marginBottom="@dimen/dim_10"
         android:fontFamily="@font/jakartareguler"/>
+    <RelativeLayout
+
+        android:id="@+id/relativelayoutalt"
+        android:layout_above="@id/linearlayoutKebijakan2"
+        android:layout_marginBottom="@dimen/dim_20"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+
+        >
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonmasukalt"
+            android:text="Login dengan Facebook"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/jakartareguler"
+            android:id="@+id/altFacebook"
+            android:paddingHorizontal="16dp"
+            android:elegantTextHeight="true"
+
+            android:drawableLeft="@drawable/ic_facebook"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"/>
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/altFacebook"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonmasukalt"
+            android:text="Login dengan Google"
+            android:textColor="@color/black"
+            android:id="@+id/altGoogle"
+            android:textAlignment="center"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/jakartareguler"
+            android:paddingHorizontal="16dp"
+
+            android:drawableLeft="@drawable/ic_google"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"/>
+
+
     </RelativeLayout>
-    <include layout="@layout/_ly_login_alt_masuk"/>
-    <include layout="@layout/_ly_login_kebijakan"/>
+    <LinearLayout
+        android:id="@+id/linearlayoutKebijakan2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_15"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
 
 
-</LinearLayout>
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Dengan masuk atau mendaftar, kamu menyetujui"
+            android:fontFamily="@font/jakartalight"
+            android:textSize="13.1sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textColor="@color/biru"
+
+                android:fontFamily="@font/jakartabolditalic"
+                android:id="@+id/btnKetentuan"
+                android:onClick="layanan"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dan"
+                android:fontFamily="@font/jakartareguler"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPrivasi"
+                android:text="Privacy Policy"
+                android:textColor="@color/biru"
+                android:fontFamily="@font/jakartabolditalic"
+                android:onClick="privasi"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
