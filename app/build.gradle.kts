@@ -59,6 +59,12 @@ dependencies {
     //dimens
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
     implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    //camera
+
+    implementation ("androidx.camera:camera-camera2:1.1.0-alpha03")
+    implementation ("androidx.camera:camera-lifecycle:1.1.0-alpha03")
+    implementation ("androidx.camera:camera-view:1.0.0-alpha23")
+
 
 
 }

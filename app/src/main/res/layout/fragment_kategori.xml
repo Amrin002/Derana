@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragmentlapor.KategoriFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartabold"
+                android:text="Tentukan kategori laporan"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etSearchKategori"
+                android:layout_width="287dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_search"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/jakartareguler"
+                android:hint="Pilih kategori berdasarkan laporan kamu"
+                android:inputType="text"
+                android:maxLength="50"
+                android:paddingLeft="15sp"
+                android:textColor="@color/black"
+                android:textColorHint="#999798"
+                android:textSize="12sp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_332"
+                android:layout_marginTop="@dimen/dim_20"
+                android:columnCount="4"
+                android:rowCount="4">
+
+                <RelativeLayout
+                    android:id="@+id/kategori1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:onClick="kategori1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
+
+                    android:onClick="kategori2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:onClick="kategori3">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
+                    android:onClick="kategori4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori4" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori5"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="kategori5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="kategori6">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kategori6" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="kategori7">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kategori7" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kategori8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:onClick="kategori8">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kategori8" />
+                </RelativeLayout>
+            </GridLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dim_20"
+            android:layout_alignParentBottom="true">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</FrameLayout>
