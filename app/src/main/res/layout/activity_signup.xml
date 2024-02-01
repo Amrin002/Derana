@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".SignupActivity"
     android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/backButtonSign"
@@ -49,8 +53,8 @@
         android:layout_marginLeft="170dp"
             android:elegantTextHeight="true"
             android:fontFamily="@font/jakartabold"
-            android:background="@drawable/backgroundbutton_email_signup"
-            android:textColor="@color/biru"
+            android:background="@drawable/backgroundbutton_signup"
+            android:textColor="@color/white"
             android:textAllCaps="false"
 
             android:layout_centerVertical="true"
@@ -64,29 +68,133 @@
     </RelativeLayout>
     </RelativeLayout>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail"
-        android:layout_width="match_parent"
-        android:layout_height="303dp" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <include layout="@layout/_ly_signup_kebijakan"/>
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="372dp"
+        android:layout_height="78dp"
+        android:layout_above="@id/buttonSignup"
+        android:layout_marginStart="@dimen/dim_15"
+
+        android:layout_marginBottom="@dimen/dim_10">
+
+        <LinearLayout
+            android:id="@+id/privation"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxKebijakan"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:buttonTint="#000000" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Saya telah membaca dan menerima segala isi"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/privation"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="-5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Syarat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartabolditalic"
+
+                android:onClick="layanan"
+                android:text="Terms of Service"
+                android:textColor="@color/biru" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartareguler"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="dan"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/kebijakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartabolditalic"
+                android:onClick="privasi"
+                android:text="Privacy Policy"
+                android:textColor="@color/biru" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Derana"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/haveacount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="@dimen/dim_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakartareguler"
+                android:text="Sudah punya akun Derana?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/haveAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/jakartabold"
+                android:onClick="masuk"
+                android:text="Masuk"
+                android:textColor="@color/biru" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_10"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonmasuk2"
         android:textColor="@color/white"
         android:text="Daftar Sekarang"
         android:layout_centerHorizontal="true"
         android:id="@+id/buttonSignup"/>
+
 </RelativeLayout>
-
-
-
-
-</LinearLayout>

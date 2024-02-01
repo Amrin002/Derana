@@ -1,23 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+
     tools:context=".VerificationActivity"
     android:background="@color/white">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <include layout="@layout/_ly_verification_header_logo" />
 
     <include layout="@layout/_ly_verification_kodeotp"/>
 
     <include layout="@layout/_ly_verification_inputkode"/>
 
-    <include layout="@layout/_ly_verfication_lanjutkan"/>
-
-    <include layout="@layout/_ly_verification_kebijakan"/>
-
 
 
 </LinearLayout>
+    <Button
+        android:layout_above="@id/linearlayoutKebijakan3"
+        android:layout_marginBottom="@dimen/dim_20"
+        android:background="@drawable/buttonmasuk2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Lanjutkan"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnLanjut"
+        android:elegantTextHeight="true"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jakartabold"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutKebijakan3"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim_15"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Dengan masuk atau mendaftar, kamu menyetujui"
+            android:fontFamily="@font/jakartalight"
+            android:textSize="13.1sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textColor="@color/black"
+
+                android:fontFamily="@font/jakartabolditalic"
+                android:id="@+id/btnTerms"
+                android:onClick="layanan"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dan"
+                android:fontFamily="@font/jakartareguler"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPrivaci"
+                android:text="Privacy Policy"
+                android:textColor="@color/black"
+                android:fontFamily="@font/jakartabolditalic"
+                android:onClick="privasi"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

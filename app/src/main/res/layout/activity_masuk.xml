@@ -28,7 +28,7 @@
             android:textSize="15dp"
             android:id="@+id/txKendala"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/dim_10"
             android:onClick="kendala"/>
 
     </LinearLayout>
