@@ -21,7 +21,7 @@
 
         <EditText
             android:layout_marginTop="10dp"
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="48dp"
             android:id="@+id/etEmailSignup"
             android:textSize="14sp"
@@ -33,7 +33,7 @@
             android:hint="Masukkan alamat email kamu di sini"
             android:fontFamily="@font/jakartareguler"/>
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nama Lengkap"
@@ -45,17 +45,17 @@
             android:id="@+id/etNamaSignupEmail"
             android:layout_width="320dp"
             android:layout_height="48dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dim_3"
             android:background="@drawable/background_et_signup"
             android:fontFamily="@font/jakartareguler"
-            android:hint="Masukkan nama lengkap kamu di sini"
+            android:hint="Masukkan nama lengkap kamu"
             android:inputType="text"
             android:paddingStart="10dp"
             android:textColor="@color/black"
             android:textColorHint="@color/hitamtransparan"
             android:textSize="14sp" />
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dim_7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/black"
@@ -68,7 +68,7 @@
             android:id="@+id/etPassSignupEmail"
             android:layout_width="320dp"
             android:layout_height="48dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dim_5"
             android:fontFamily="@font/jakartareguler"
 
             android:backgroundTint="#D9D9D9"

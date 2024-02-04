@@ -9,60 +9,49 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.deranaindonesia.derana.databinding.ActivityLoginBinding
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityLoginBinding
     //inisialisai variabel
-    private lateinit var etPhone : EditText
-    private lateinit var btnMasuk : Button
-    private lateinit var btnDaftar : Button
-    private lateinit var btnAltFb : Button
-    private lateinit var btnAltGoogle : Button
-    private lateinit var btnKetentuan : TextView
-    private lateinit var btnPrivasi : TextView
-    private lateinit var btnKendala : TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_masuk)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         //identifikasi Variable
-        btnMasuk = findViewById(R.id.btnMasuk)
-        btnDaftar = findViewById(R.id.btnReg)
-        btnAltFb = findViewById(R.id.altFacebook)
-        btnAltGoogle = findViewById(R.id.altGoogle)
-        btnKetentuan = findViewById(R.id.btnKetentuan)
-        btnPrivasi = findViewById(R.id.btnPrivasi)
-        etPhone = findViewById(R.id.etPhoneNumber)
-        btnKendala = findViewById(R.id.txKendala)
 
-        btnMasuk.setOnClickListener{
+
+        binding.btnMasuk.setOnClickListener{
             masuk()
         }
 
-        btnDaftar.setOnClickListener{
+        binding.btnReg.setOnClickListener{
             daftar()
         }
 
-        btnKendala.setOnClickListener{
+        binding.txKendala.setOnClickListener{
             kendala()
         }
-        btnAltFb.setOnClickListener{
+        binding.altFacebook.setOnClickListener{
             altFb()
         }
-        btnAltGoogle.setOnClickListener{
+        binding.altGoogle.setOnClickListener{
             altGoogle()
         }
 
-        btnKetentuan.setOnClickListener{
+        binding.btnKetentuan.setOnClickListener{
             layanan()
         }
-        btnPrivasi.setOnClickListener{
+        binding.btnPrivasi.setOnClickListener{
             privasi()
         }
 
     }
 
     private fun masuk() {
-        val phone = etPhone.text.toString().trim()
+        val phone = binding.etPhoneNumber.text.toString().trim()
 
         Log.d("Masuk", "Nomor telepon: $phone")
 
@@ -75,7 +64,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun verfication() {
-        val phone = etPhone.text.toString().trim()
+        val phone = binding.etPhoneNumber.text.toString().trim()
         val intent = Intent(this, VerificationActivity::class.java)
         intent.putExtra("PHONE_NUMBER", phone)
         startActivity(intent)

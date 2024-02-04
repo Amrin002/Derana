@@ -7,26 +7,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import com.deranaindonesia.derana.R
+import com.deranaindonesia.derana.databinding.FragmentSignupTeleponBinding
 import com.deranaindonesia.derana.datasignup.PhoneDataSignUp
 
 
 class FragmentSignupTelepon : Fragment(R.layout.fragment_signup_telepon) {
-    private lateinit var etPhone: EditText
-    private lateinit var etFullNamePhone: EditText
-    private lateinit var etPasswordPhone: EditText
+
+
+    private var _binding : FragmentSignupTeleponBinding? = null
+    private val binding get() = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        etPhone = requireView().findViewById(R.id.etPhoneSignup)
-        etFullNamePhone = requireView().findViewById(R.id.etNamaSignupPhone)
-        etPasswordPhone = requireView().findViewById(R.id.etPassSignupPhone)
+        _binding = FragmentSignupTeleponBinding.bind(view)
+
     }
 
     fun getPhoneValue(): PhoneDataSignUp? {
         //persiapan pengirimin nilai ke SignupActivity
-        val phone = etPhone.text.toString()
-        val pfullname = etFullNamePhone.text.toString()
-        val ppassword = etPasswordPhone.text.toString()
+        val phone = binding.etPhoneSignup.text.toString()
+        val pfullname = binding.etNamaSignupPhone.text.toString()
+        val ppassword = binding.etPassSignupPhone.text.toString()
 
         if (phone.isNotBlank() && pfullname.isNotEmpty() && ppassword.isNotEmpty()) {
             return PhoneDataSignUp(phone, pfullname, ppassword)

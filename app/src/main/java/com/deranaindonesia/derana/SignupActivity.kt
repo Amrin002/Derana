@@ -3,67 +3,59 @@ package com.deranaindonesia.derana
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.CheckBox
-import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.FragmentContainerView
+import com.deranaindonesia.derana.databinding.ActivitySignupBinding
 import com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail
 import com.deranaindonesia.derana.fragmentsignup.FragmentSignupTelepon
 
 class SignupActivity : AppCompatActivity() {
 
-    private lateinit var btnBack: ImageButton
-    private lateinit var btnSignup: Button
-    private lateinit var btnSyarat : TextView
-    private lateinit var btnKebijakan : TextView
-    private lateinit var btnMasuk : TextView
-    private lateinit var btnEmail : Button
-    private lateinit var btnPhone : Button
+    private lateinit var binding : ActivitySignupBinding
     private lateinit var checkboxKebijakan: CheckBox
 
     private lateinit var viewRegistrasi : FragmentContainerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        binding = ActivitySignupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         viewRegistrasi = findViewById(R.id.fragmentContainerView)
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, FragmentSignupEmail()).commit()
 
         checkboxKebijakan = findViewById(R.id.checkboxKebijakan)
 
-        btnBack = findViewById(R.id.backButtonSign)
-        btnBack.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+        binding.backButtonSign.setOnClickListener{
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        btnSignup = findViewById(R.id.buttonSignup)
-        btnSignup.setOnClickListener{
+
+        binding.buttonSignup.setOnClickListener{
             signup()
         }
-        btnSyarat= findViewById(R.id.Syarat)
-        btnSyarat.setOnClickListener{
+
+        binding.Syarat.setOnClickListener{
             syarat()
         }
-        btnKebijakan = findViewById(R.id.kebijakan)
-        btnKebijakan.setOnClickListener{
+
+        binding.kebijakan.setOnClickListener{
             kebijakan()
         }
 
-        btnMasuk = findViewById(R.id.haveAccount)
-        btnMasuk.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+
+        binding.haveAccount.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        btnEmail = findViewById(R.id.emailSignup)
-        btnEmail.setOnClickListener {
+
+        binding.emailSignup.setOnClickListener {
             emailsignup()
         }
 
-        btnPhone = findViewById(R.id.phoneSignup)
-        btnPhone.setOnClickListener {
+
+        binding.phoneSignup.setOnClickListener {
             phonesignup()
         }
 
@@ -76,13 +68,13 @@ class SignupActivity : AppCompatActivity() {
             .commit()
 
         // Atur latar belakang tombol yang aktif
-        btnEmail.setBackgroundResource(R.color.transparansi)
-        btnEmail.setTextColor(resources.getColor(R.color.white))
+        binding.emailSignup.setBackgroundResource(R.color.transparansi)
+        binding.emailSignup.setTextColor(resources.getColor(R.color.white))
 
 
 
-        btnPhone.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
-        btnPhone.setTextColor(resources.getColor(R.color.biru))
+        binding.phoneSignup.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
+        binding.phoneSignup.setTextColor(resources.getColor(R.color.biru))
         // implementasi
     }
 
@@ -92,10 +84,10 @@ class SignupActivity : AppCompatActivity() {
             .commit()
 
         // Atur latar belakang tombol yang aktif
-        btnEmail.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
-        btnEmail.setTextColor(resources.getColor(R.color.biru))
-        btnPhone.setBackgroundResource(R.color.transparansi)
-        btnPhone.setTextColor(resources.getColor(R.color.white))
+        binding.emailSignup.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
+        binding.emailSignup.setTextColor(resources.getColor(R.color.biru))
+        binding.phoneSignup.setBackgroundResource(R.color.transparansi)
+        binding.phoneSignup.setTextColor(resources.getColor(R.color.white))
         // implementasi email signup
     }
 

@@ -5,56 +5,61 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.TextView
 import com.deranaindonesia.derana.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class KategoriFragment : Fragment(R.layout.fragment_lapor_kategori) {
+    private lateinit var kategori1: RelativeLayout
+    private lateinit var kategori2: RelativeLayout
+    private lateinit var kategori3: RelativeLayout
+    private lateinit var kategori4: RelativeLayout
+    private lateinit var kategori5: RelativeLayout
+    private lateinit var kategori6: RelativeLayout
+    private lateinit var kategori7: RelativeLayout
+    private lateinit var kategori8: RelativeLayout
+    private lateinit var frameLanjut1: FrameLayout
+    private lateinit var imgkategoriSet: ImageView
+    private lateinit var kategoriSet: TextView
 
-/**
- * A simple [Fragment] subclass.
- * Use the [KategoriFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class KategoriFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+        // Inisialisasi elemen UI
+        kategori1 = view.findViewById(R.id.kategori1)
+        kategori2 = view.findViewById(R.id.kategori2)
+        kategori3 = view.findViewById(R.id.kategori3)
+        kategori4 = view.findViewById(R.id.kategori4)
+        kategori5 = view.findViewById(R.id.kategori5)
+        kategori6 = view.findViewById(R.id.kategori6)
+        kategori7 = view.findViewById(R.id.kategori7)
+        kategori8 = view.findViewById(R.id.kategori8)
+        frameLanjut1 = view.findViewById(R.id.frameLanjut1)
+        imgkategoriSet = view.findViewById(R.id.imgkategoriSet)
+        kategoriSet = view.findViewById(R.id.kategoriSet)
+
+        // Set listener untuk setiap kategori
+        kategori1.setOnClickListener { onKategoriClicked("Bahasa di ruang publik", R.drawable.kategori1_1) }
+        kategori2.setOnClickListener { onKategoriClicked("Bahasa daerah", R.drawable.kategori2_2) }
+        kategori3.setOnClickListener { onKategoriClicked("Kamus Besar Bahasa Indonesia", R.drawable.kategori2_2) }
+        kategori4.setOnClickListener { onKategoriClicked("Lalu lintas", R.drawable.kategori1_1) }
+        kategori5.setOnClickListener { onKategoriClicked("Pendidikan", R.drawable.kategori1_1) }
+        kategori6.setOnClickListener { onKategoriClicked("Sosial", R.drawable.kategori2_2) }
+        kategori7.setOnClickListener { onKategoriClicked("Kebersihan", R.drawable.kategori1_1) }
+        kategori8.setOnClickListener { onKategoriClicked("Fasilitas umum", R.drawable.kategori2_2) }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_kategori, container, false)
-    }
+    // Fungsi yang akan dipanggil saat kategori di klik
+    private fun onKategoriClicked(kategoriText: String, imageResource: Int) {
+        // Ubah visibility FrameLayout menjadi VISIBLE
+        frameLanjut1.visibility = View.VISIBLE
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment KategoriFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            KategoriFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        // Set teks dan gambar sesuai dengan kategori yang di klik
+        kategoriSet.text = kategoriText
+        imgkategoriSet.setImageResource(imageResource)
+
+        // Tambahkan kode lain yang ingin Anda lakukan ketika kategori di klik di sini
     }
 }
