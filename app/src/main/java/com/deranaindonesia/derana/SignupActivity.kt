@@ -74,7 +74,7 @@ class SignupActivity : AppCompatActivity() {
 
 
         binding.phoneSignup.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
-        binding.phoneSignup.setTextColor(resources.getColor(R.color.biru))
+        binding.phoneSignup.setTextColor(resources.getColor(R.color.primary))
         // implementasi
     }
 
@@ -85,7 +85,7 @@ class SignupActivity : AppCompatActivity() {
 
         // Atur latar belakang tombol yang aktif
         binding.emailSignup.setBackgroundResource(R.drawable.backgroundbutton_email_signup)
-        binding.emailSignup.setTextColor(resources.getColor(R.color.biru))
+        binding.emailSignup.setTextColor(resources.getColor(R.color.primary))
         binding.phoneSignup.setBackgroundResource(R.color.transparansi)
         binding.phoneSignup.setTextColor(resources.getColor(R.color.white))
         // implementasi email signup

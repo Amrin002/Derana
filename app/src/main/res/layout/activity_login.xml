@@ -14,7 +14,32 @@
         android:orientation="vertical"
         >
     <include layout="@layout/_ly_login_header_login"/>
-    <include layout="@layout/_ly_login_masuk"/>
+        <LinearLayout
+            android:id="@+id/llLogin1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                android:fontFamily="@font/jakartabold"
+                android:textSize="20dp"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silakan masuk menggunakan nomor HP \nyang telah didaftarkan."
+                android:textSize="14.5dp"
+                android:fontFamily="@font/jakartareguler"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
 
 
 
@@ -22,7 +47,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+
+            android:layout_marginTop="@dimen/dim_45"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -86,7 +112,7 @@
             android:layout_height="wrap_content"
             android:text="Ada kendala dengan No. HP kamu?"
             android:fontFamily="@font/jakartabold"
-            android:textColor="@color/biru"
+            android:textColor="@color/primary"
             android:textSize="15dp"
             android:id="@+id/txKendala"
             android:layout_marginLeft="20dp"
@@ -124,7 +150,7 @@
             android:layout_height="50dp"
             android:layout_below="@id/btnMasuk"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/biru"
+            android:textColor="@color/primary"
             android:textAllCaps="false"
             android:elegantTextHeight="true"
             android:fontFamily="@font/jakartabold"
@@ -222,7 +248,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Terms of Service"
-                android:textColor="@color/biru"
+                android:textColor="@color/primary"
 
                 android:fontFamily="@font/jakartabolditalic"
                 android:id="@+id/btnKetentuan"
@@ -240,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btnPrivasi"
                 android:text="Privacy Policy"
-                android:textColor="@color/biru"
+                android:textColor="@color/primary"
                 android:fontFamily="@font/jakartabolditalic"
                 android:onClick="privasi"
                 />

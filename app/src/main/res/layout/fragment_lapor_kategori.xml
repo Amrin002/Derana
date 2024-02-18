@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="@dimen/dim_20"
     android:background="@color/white"
-    android:layout_marginHorizontal="@dimen/dim_30"
+    android:layout_marginHorizontal="@dimen/dim_10"
     tools:context=".fragmentlapor.KategoriFragment">
 
     <RelativeLayout
@@ -21,16 +21,20 @@
             android:layout_alignParentStart="true"
             >
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jakartabold"
                 android:text="Tentukan kategori laporan"
                 android:textColor="@color/black" />
-
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
             <EditText
                 android:id="@+id/etSearchKategori"
-                android:layout_width="287dp"
+                android:layout_width="300dp"
                 android:layout_height="35dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/dim_20"
@@ -45,8 +49,12 @@
                 android:textColor="@color/black"
                 android:textColorHint="#999798"
                 android:textSize="12sp" />
-
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
             <GridLayout
+                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/dim_332"
                 android:layout_marginTop="@dimen/dim_20"
@@ -60,12 +68,21 @@
                     android:layout_marginRight="@dimen/dim_10"
                     android:layout_marginBottom="@dimen/dim_10"
                     android:onClick="kategori1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ktg1"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/kategori1" />
+                        android:text="Bahasa di ruang publik"
+                        android:layout_below="@id/ktg1"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -80,8 +97,17 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/ktg2"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/kategori2" />
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Bahasa daerah"
+                        android:layout_below="@id/ktg2"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -96,8 +122,17 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/ktg3"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/kategori3" />
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="KBBI"
+                        android:layout_below="@id/ktg3"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -111,22 +146,41 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/ktg4"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/kategori4" />
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="EYD"
+                        android:layout_below="@id/ktg4"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/kategori5"
-                    android:layout_width="68dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginRight="@dimen/dim_10"
+                    android:layout_marginBottom="@dimen/dim_10"
                     android:onClick="kategori5">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/ktg5"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/kategori5" />
+                        android:src="@drawable/kategori5"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="UKBI"
+                        android:layout_below="@id/ktg5"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -138,7 +192,17 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/kategori6" />
+                        android:id="@+id/ktg6"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="BIPA"
+                        android:layout_below="@id/ktg6"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -151,7 +215,17 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/kategori7" />
+                        android:id="@+id/ktg7"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Literasi"
+                        android:layout_below="@id/ktg7"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -164,9 +238,20 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/kategori8" />
+                        android:id="@+id/ktg8"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/kategori1"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kesastraan"
+                        android:layout_below="@id/ktg8"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/jakartareguler"
+                        android:textColor="@color/black"/>
                 </RelativeLayout>
             </GridLayout>
+            </RelativeLayout>
 
         </LinearLayout>
         <FrameLayout
@@ -215,13 +300,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     >
-            <ImageButton
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/entahlahhh"
-                android:src="@drawable/titik3"
-                android:id="@+id/setKategori"/>
+
+                    <ImageButton
+                        android:id="@+id/setKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dim_20"
+                        android:background="@drawable/entahlahhh"
+                        android:src="@drawable/titik3" />
                 </RelativeLayout>
 
             </LinearLayout>

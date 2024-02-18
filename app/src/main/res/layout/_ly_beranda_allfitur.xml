@@ -39,12 +39,16 @@
             android:layout_marginLeft="5sp"/>
 
     </LinearLayout>
-    <GridLayout
-        android:layout_marginLeft="20dp"
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <GridLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="4"
-        android:rowCount="3">
+        android:rowCount="3"
+         android:layout_centerHorizontal="true">
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -290,6 +294,7 @@
         </RelativeLayout>
 
     </GridLayout>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -313,11 +318,15 @@
             android:layout_marginLeft="5sp"/>
 
     </LinearLayout>
-    <GridLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:columnCount="4"
-        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
         android:rowCount="3">
 
         <RelativeLayout
@@ -441,4 +450,5 @@
 
 
     </GridLayout>
+    </RelativeLayout>
 </LinearLayout>

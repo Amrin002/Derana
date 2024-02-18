@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/iconprofilChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/profilchat"
+        android:text="K"
+        android:textAlignment="center"
+        android:elegantTextHeight="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/jakartabold"
+        android:textSize="16sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilChat"
+        android:layout_toEndOf="@id/iconprofilChat"
+        android:text="Konsultasi"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jakartabold"
+        android:layout_marginStart="@dimen/dim_10"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeChat"
+        android:text="14/02/24"
+        android:layout_marginEnd="@dimen/dim_16"
+        android:layout_alignParentEnd="true"
+        android:elegantTextHeight="true"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deskChat"
+        android:textSize="14sp"
+        android:text="kamu menerima pesan baru"
+        android:layout_toEndOf="@id/iconprofilChat"
+        android:layout_below="@id/profilChat"
+        android:fontFamily="@font/jakartareguler"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dim_10"/>
+
+
+
+
+
+</RelativeLayout>

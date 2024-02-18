@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentlapor.CameraFragment">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraLapor"/>
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Ambil Foto"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentukan jenis laporan"
+            android:id="@+id/txLapor1"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/jakartabold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="@dimen/dim_15"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvLapor1"
+            android:layout_below="@id/txLapor1"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Private/Rahasia"
+                android:fontFamily="@font/jakartabold"
+                android:elegantTextHeight="true"
+                android:paddingLeft="10dp"
+                android:id="@+id/rbLapor1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporan ini akan disembunyikan di aplikasi Derana, namun tetap masuk dalam sistem kami. Foto dan identitas kamu tidak akan terlihat (anonim) oleh publik ataupun petugas."
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:layout_below="@id/rbLapor1"
+                android:layout_marginStart="@dimen/dim_39"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="biru">#0090D4</color>
+    <color name="primary">#0090D4</color>
     <color name="merah">#FF0000</color>
     <color name="birumuda">#B3E4F6</color>
     <color name="transparansi">#00FFFFFF</color>

@@ -48,7 +48,7 @@
             android:fontFamily="@font/jakartabold"
             android:textAllCaps="false"
             android:text="Alamat Email"
-            android:textColor="@color/biru" />
+            android:textColor="@color/primary" />
         <Button
         android:layout_marginLeft="170dp"
             android:elegantTextHeight="true"
@@ -126,7 +126,7 @@
 
                 android:onClick="layanan"
                 android:text="Terms of Service"
-                android:textColor="@color/biru" />
+                android:textColor="@color/primary" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
                 android:fontFamily="@font/jakartabolditalic"
                 android:onClick="privasi"
                 android:text="Privacy Policy"
-                android:textColor="@color/biru" />
+                android:textColor="@color/primary" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -179,7 +179,7 @@
                 android:fontFamily="@font/jakartabold"
                 android:onClick="masuk"
                 android:text="Masuk"
-                android:textColor="@color/biru" />
+                android:textColor="@color/primary" />
 
         </LinearLayout>
 

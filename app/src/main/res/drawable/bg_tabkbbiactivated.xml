@@ -13,7 +13,7 @@
             <solid android:color="@color/transparansi" /> <!-- Set your background color here -->
             <stroke
                 android:width="4dp"
-            android:color="@color/biru" /> <!-- Set your underline color here -->
+            android:color="@color/primary" /> <!-- Set your underline color here -->
         </shape>
     </item>
 </layer-list>

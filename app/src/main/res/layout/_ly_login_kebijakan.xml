@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Terms of Service"
-            android:textColor="@color/biru"
+            android:textColor="@color/primary"
 
             android:fontFamily="@font/jakartabolditalic"
             android:id="@+id/btnKetentuan"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnPrivasi"
             android:text="Privacy Policy"
-            android:textColor="@color/biru"
+            android:textColor="@color/primary"
             android:fontFamily="@font/jakartabolditalic"
             android:onClick="privasi"
             />

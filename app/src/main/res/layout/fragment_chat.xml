@@ -1,14 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragmentberanda.ChatFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerChat"
+        android:text="Pintasan Cepat"
+        android:fontFamily="@font/jakartabold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_20"
+        />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:id="@+id/gridChat"
+        android:layout_below="@id/headerChat">
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:id="@+id/pintasanChat1"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconLapor"
+                android:src="@drawable/ic_chat_lapor"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lapor"
+                android:layout_below="@id/iconLapor"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_5"
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:id="@+id/pintasanChat2"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconPanggilan"
+                android:src="@drawable/icon_chat_panggiilan"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panggilan"
+                android:layout_below="@id/iconPanggilan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_5"
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:id="@+id/pintasanChat3"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconSurel"
+                android:src="@drawable/ic_chat_surel"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surel"
+                android:layout_below="@id/iconSurel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_5"
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:id="@+id/pintasanChat4"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconKonsultasi"
+                android:src="@drawable/icon_chat_konsultsasi"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konsultasi"
+                android:layout_below="@id/iconKonsultasi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_5"
+                android:fontFamily="@font/jakartareguler"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+    </GridLayout>
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/rvChat"
+        android:layout_below="@id/gridChat"
+        android:layout_marginTop="@dimen/dim_20"/>
 
-</FrameLayout>
+</RelativeLayout>

@@ -43,8 +43,8 @@ class OnBoardingActivity : AppCompatActivity() {
                 setProgressBarWithAnimation()
                 when (position) {
                     0 -> {
-                        setBackgroundColor(R.color.biru)
-                        setContrastTextColor(R.color.biru)
+                        setBackgroundColor(R.color.primary)
+                        setContrastTextColor(R.color.primary)
                     }
                     1 -> {
                         setBackgroundColor(R.color.merah)
@@ -197,7 +197,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun getContrastColor(color: Int): Int {
         return when (color) {
-            ContextCompat.getColor(this, R.color.biru) -> ContextCompat.getColor(this, R.color.biru)
+            ContextCompat.getColor(this, R.color.primary) -> ContextCompat.getColor(this, R.color.primary)
             ContextCompat.getColor(this, R.color.merah) -> ContextCompat.getColor(this, R.color.merah)
             ContextCompat.getColor(this, R.color.hijau) -> ContextCompat.getColor(this, R.color.hijau)
             ContextCompat.getColor(this, R.color.ungu) -> ContextCompat.getColor(this, R.color.ungu)

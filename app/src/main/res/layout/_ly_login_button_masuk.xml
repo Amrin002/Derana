@@ -25,7 +25,7 @@
         android:layout_height="50dp"
         android:layout_below="@id/btnMasuk"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/biru"
+        android:textColor="@color/primary"
         android:textAllCaps="false"
         android:elegantTextHeight="true"
         android:fontFamily="@font/jakartabold"

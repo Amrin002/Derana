@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.FragmentContainer
 import androidx.fragment.app.FragmentContainerView
+import com.deranaindonesia.derana.databinding.ActivityBerandaBinding
 import com.deranaindonesia.derana.fragmentberanda.BerandaFragment
 import com.deranaindonesia.derana.fragmentberanda.ChatFragment
 import com.deranaindonesia.derana.fragmentberanda.LaporFragment
@@ -12,35 +13,33 @@ import com.deranaindonesia.derana.fragmentberanda.StatistikFragment
 import com.deranaindonesia.derana.fragmentsignup.FragmentSignupEmail
 
 class BerandaActivity : AppCompatActivity() {
-    private lateinit var btnBeranda: Button
-    private lateinit var btnStatistik: Button
-    private lateinit var btnLapor: Button
-    private lateinit var btnChat: Button
+    private lateinit var binding : ActivityBerandaBinding
 
     private lateinit var tabFragment: FragmentContainerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_beranda)
+        binding = ActivityBerandaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         tabFragment = findViewById(R.id.tab)
         supportFragmentManager.beginTransaction().replace(R.id.tab, BerandaFragment()).commit()
 
-        btnBeranda = findViewById(R.id.tabBtnBeranda)
-        btnBeranda.setOnClickListener{
+
+        binding.tabBtnBeranda.setOnClickListener{
             tabBeranda()
         }
 
-        btnStatistik = findViewById(R.id.tabbtnStatistik)
-        btnStatistik.setOnClickListener {
+
+        binding.tabbtnStatistik.setOnClickListener {
             tabStatistik()
         }
 
-        btnLapor = findViewById(R.id.tabbtnLapor)
-        btnLapor.setOnClickListener {
+
+        binding.tabbtnLapor.setOnClickListener {
             tabLapor()
         }
-        btnChat = findViewById(R.id.tabbtnChat)
-        btnChat.setOnClickListener {
+
+        binding.tabbtnChat.setOnClickListener {
             tabChat()
         }
     }
@@ -48,64 +47,64 @@ class BerandaActivity : AppCompatActivity() {
     private fun tabChat() {
         supportFragmentManager.beginTransaction().replace(R.id.tab, ChatFragment()).commit()
 
-        btnBeranda.setBackgroundResource(R.color.transparansi)
-        btnBeranda.setTextColor(resources.getColor(R.color.white))
+        binding.tabBtnBeranda.setBackgroundResource(R.color.transparansi)
+        binding.tabBtnBeranda.setTextColor(resources.getColor(R.color.white))
 
-        btnStatistik.setBackgroundResource(R.color.transparansi)
-        btnStatistik.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnStatistik.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnStatistik.setTextColor(resources.getColor(R.color.white))
 
-        btnLapor.setBackgroundResource(R.color.transparansi)
-        btnLapor.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnLapor.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnLapor.setTextColor(resources.getColor(R.color.white))
 
-        btnChat.setBackgroundResource(R.drawable.background_tab_activated)
-        btnChat.setTextColor(resources.getColor(R.color.biru))
+        binding.tabbtnChat.setBackgroundResource(R.drawable.background_tab_activated)
+        binding.tabbtnChat.setTextColor(resources.getColor(R.color.primary))
     }
 
     private fun tabLapor() {
         supportFragmentManager.beginTransaction().replace(R.id.tab, LaporFragment()).commit()
 
-        btnBeranda.setBackgroundResource(R.color.transparansi)
-        btnBeranda.setTextColor(resources.getColor(R.color.white))
+        binding.tabBtnBeranda.setBackgroundResource(R.color.transparansi)
+        binding.tabBtnBeranda.setTextColor(resources.getColor(R.color.white))
 
-        btnStatistik.setBackgroundResource(R.color.transparansi)
-        btnStatistik.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnStatistik.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnStatistik.setTextColor(resources.getColor(R.color.white))
 
-        btnLapor.setBackgroundResource(R.drawable.background_tab_activated)
-        btnLapor.setTextColor(resources.getColor(R.color.biru))
+        binding.tabbtnLapor.setBackgroundResource(R.drawable.background_tab_activated)
+        binding.tabbtnLapor.setTextColor(resources.getColor(R.color.primary))
 
-        btnChat.setBackgroundResource(R.color.transparansi)
-        btnChat.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnChat.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnChat.setTextColor(resources.getColor(R.color.white))
     }
 
     private fun tabStatistik() {
         supportFragmentManager.beginTransaction().replace(R.id.tab, StatistikFragment()).commit()
 
-        btnBeranda.setBackgroundResource(R.color.transparansi)
-        btnBeranda.setTextColor(resources.getColor(R.color.white))
+        binding.tabBtnBeranda.setBackgroundResource(R.color.transparansi)
+        binding.tabBtnBeranda.setTextColor(resources.getColor(R.color.white))
 
-        btnStatistik.setBackgroundResource(R.drawable.background_tab_activated)
-        btnStatistik.setTextColor(resources.getColor(R.color.biru))
+        binding.tabbtnStatistik.setBackgroundResource(R.drawable.background_tab_activated)
+        binding.tabbtnStatistik.setTextColor(resources.getColor(R.color.primary))
 
-        btnLapor.setBackgroundResource(R.color.transparansi)
-        btnLapor.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnLapor.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnLapor.setTextColor(resources.getColor(R.color.white))
 
-        btnChat.setBackgroundResource(R.color.transparansi)
-        btnChat.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnChat.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnChat.setTextColor(resources.getColor(R.color.white))
     }
 
     private fun tabBeranda() {
         supportFragmentManager.beginTransaction().replace(R.id.tab, BerandaFragment()).commit()
 
-        btnBeranda.setBackgroundResource(R.drawable.background_tab_activated)
-        btnBeranda.setTextColor(resources.getColor(R.color.biru))
+       binding.tabBtnBeranda.setBackgroundResource(R.drawable.background_tab_activated)
+       binding.tabBtnBeranda.setTextColor(resources.getColor(R.color.primary))
 
-        btnStatistik.setBackgroundResource(R.color.transparansi)
-        btnStatistik.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnStatistik.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnStatistik.setTextColor(resources.getColor(R.color.white))
 
-        btnLapor.setBackgroundResource(R.color.transparansi)
-        btnLapor.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnLapor.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnLapor.setTextColor(resources.getColor(R.color.white))
 
-        btnChat.setBackgroundResource(R.color.transparansi)
-        btnChat.setTextColor(resources.getColor(R.color.white))
+        binding.tabbtnChat.setBackgroundResource(R.color.transparansi)
+        binding.tabbtnChat.setTextColor(resources.getColor(R.color.white))
     }
 }

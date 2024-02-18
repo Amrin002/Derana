@@ -35,7 +35,7 @@
                 android:fontFamily="@font/jakartabold"
                 android:text="Beranda"
                 android:textAllCaps="false"
-                android:textColor="@color/biru"
+                android:textColor="@color/primary"
                 android:textSize="13dp" />
 
             <Button

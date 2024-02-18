@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
-        val biruColor = ContextCompat.getColor(this, R.color.biru)
+        val biruColor = ContextCompat.getColor(this, R.color.primary)
         progressBar.indeterminateTintList = ColorStateList.valueOf(biruColor)
 
 

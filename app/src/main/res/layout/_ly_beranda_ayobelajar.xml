@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="Lihat Semua"
             android:fontFamily="@font/jakartabold"
-            android:textColor="@color/biru"
+            android:textColor="@color/primary"
             android:textSize="13sp"
             android:layout_marginRight="30dp"
             android:id="@+id/seeAll1"/>
