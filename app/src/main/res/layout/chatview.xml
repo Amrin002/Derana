@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/profilChat"
+        android:id="@+id/kontakChat"
         android:layout_toEndOf="@id/iconprofilChat"
         android:text="Konsultasi"
         android:textSize="16sp"
@@ -46,7 +46,7 @@
         android:textSize="14sp"
         android:text="kamu menerima pesan baru"
         android:layout_toEndOf="@id/iconprofilChat"
-        android:layout_below="@id/profilChat"
+        android:layout_below="@id/kontakChat"
         android:fontFamily="@font/jakartareguler"
         android:textColor="@color/black"
         android:layout_marginStart="@dimen/dim_10"/>

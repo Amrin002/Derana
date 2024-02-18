@@ -33,7 +33,7 @@
         android:layout_marginTop="100dp"
         android:layout_below="@id/textlabor"
         android:background="@drawable/progres_loading"
-        android:progressTint="@color/biru"/>
+        android:progressTint="@color/primary"/>
 
 
 

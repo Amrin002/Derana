@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentberanda.ChatFragment">
 
     <TextView
@@ -129,5 +130,15 @@
         android:id="@+id/rvChat"
         android:layout_below="@id/gridChat"
         android:layout_marginTop="@dimen/dim_20"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewChat"
+        android:src="@drawable/ic_newchat"
+        app:backgroundTint="@color/primary"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dim_15"
+        android:layout_marginBottom="@dimen/dim_15"/>
 
 </RelativeLayout>
