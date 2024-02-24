@@ -1,23 +1,28 @@
 package com.deranaindonesia.derana.fragmentberanda
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.deranaindonesia.derana.R
 import com.deranaindonesia.derana.adapter.AdapterChat
 import com.deranaindonesia.derana.datachat.DataChat
+import com.deranaindonesia.derana.newchat.NewChatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class ChatFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: AdapterChat
+    private lateinit var btnNewChat : FloatingActionButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,6 +47,13 @@ class ChatFragment : Fragment() {
 
         // Set data to the adapter
         adapter.setItems(chatList)
+
+        btnNewChat = view.findViewById(R.id.btnNewChat)
+        btnNewChat.setOnClickListener {
+            val intent = Intent(requireContext(), NewChatActivity::class.java)
+            startActivity(intent)
+        }
+
 
         return view
     }

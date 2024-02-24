@@ -9,7 +9,7 @@ import com.deranaindonesia.derana.R
 import com.deranaindonesia.derana.datachat.DataChat
 
 
-class HolderChat (itemView: View) : RecyclerView.ViewHolder(itemView) {
+class ChatHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val profilChat: TextView = itemView.findViewById(R.id.iconprofilChat)
     private val kontakChat: TextView = itemView.findViewById(R.id.kontakChat)
     private val isiChat : TextView = itemView.findViewById(R.id.deskChat)
@@ -26,10 +26,10 @@ class HolderChat (itemView: View) : RecyclerView.ViewHolder(itemView) {
     }
 
     companion object {
-        fun create(parent: ViewGroup): HolderChat {
+        fun create(parent: ViewGroup): ChatHolder {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.chatview, parent, false)
-            return HolderChat(view)
+            return ChatHolder(view)
         }
     }
 }

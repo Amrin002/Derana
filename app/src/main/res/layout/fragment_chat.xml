@@ -25,12 +25,16 @@
         android:columnCount="4"
         android:rowCount="1"
         android:id="@+id/gridChat"
+        android:layout_marginTop="@dimen/dim_10"
+
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/headerChat">
         <RelativeLayout
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_row="0"
+
             android:id="@+id/pintasanChat1"
             >
             <ImageView
@@ -51,10 +55,11 @@
                 android:textSize="15sp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_row="0"
+            android:layout_marginStart="@dimen/dim_15"
             android:id="@+id/pintasanChat2"
             >
             <ImageView
@@ -75,10 +80,11 @@
                 android:textSize="15sp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_row="0"
+            android:layout_marginStart="@dimen/dim_15"
             android:id="@+id/pintasanChat3"
             >
             <ImageView
@@ -99,9 +105,10 @@
                 android:textSize="15sp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="3"
+            android:layout_marginStart="@dimen/dim_15"
             android:layout_row="0"
             android:id="@+id/pintasanChat4"
             >
