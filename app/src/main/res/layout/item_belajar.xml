@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="10dp"
+    >
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belajar\nBahasa Buru"
+        android:fontFamily="@font/jakarta_sans_bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:id="@+id/judulBelajar"
+        />
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episode 1"
+        android:id="@+id/episodeBelajar"
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="75dp"
+        />
+
+    <ProgressBar
+        android:layout_marginStart="20dp"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/belajar1"
+        android:layout_marginStart="190dp"
+        android:id="@+id/imgBelajar"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/beranda_ic"
+        android:title="Beranda" />
+    <item
+        android:id="@+id/navigation_learn"
+        android:icon="@drawable/belajar_ic"
+        android:title="Belajar" />
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/temukan_ic"
+        android:title="Temukan" />
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat_ic"
+        android:title="Obrolan" />
+</menu>

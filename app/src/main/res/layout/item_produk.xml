@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ar_bahasa"
+        android:id="@+id/ic_produk"
+        android:layout_centerHorizontal="true"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduk"
+        android:text="AR \nBahasa"
+        android:textAlignment="center"
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textColor="@color/black"
+        android:layout_below="@id/ic_produk"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

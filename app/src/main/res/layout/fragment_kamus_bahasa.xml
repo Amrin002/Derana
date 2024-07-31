@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.features.KamusBahasaFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblKamus"
+        android:text="Kamus Bahasa"
+        android:fontFamily="@font/jakarta_sans_bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/lblKamus"
+        android:id="@+id/v1"
+        android:background="@color/buton"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblPilihBhs"
+        android:text="Pilih Bahasa Daerah"
+        android:layout_below="@id/v1"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/jakarta_sans_bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSubPilihBahasa"
+        android:text="Pilih bahasa daerah yang akan kamu cari"
+        android:layout_below="@+id/lblPilihBhs"
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinerPilihBahasa"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/lblSubPilihBahasa"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/spiner_background"/>
+
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/spinerPilihBahasa"-->
+<!--        android:id="@+id/searchKamusBahasa"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:queryHint="Cari kosakata kamu disini"-->
+<!--        android:background="@drawable/spiner_background"-->
+<!--        android:hint="Car"/>-->
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/searchKamusBahasa"
+        android:layout_below="@id/spinerPilihBahasa"
+        android:drawableStart="@drawable/search_ic"
+        android:background="@drawable/spiner_background"
+        android:hint="Cari kosakata kamu disini"
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblKosakata"
+        android:layout_below="@id/searchKamusBahasa"
+        android:text="Kosakata hari ini "
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jakarta_sans_bold"
+        android:textSize="18sp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSubKosakata"
+        android:layout_below="@id/lblKosakata"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Temukan kosakata acak kamu hari ini"
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+
+
+</RelativeLayout>
