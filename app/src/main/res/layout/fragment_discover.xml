@@ -101,11 +101,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <!-- CARD 1 -->
                         <androidx.recyclerview.widget.RecyclerView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:id="@+id/rvLanguage"/>
+                            android:id="@+id/rvLanguage"
+                            android:layout_marginRight="25dp"/>
 
 
                     </LinearLayout>
@@ -143,45 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <RelativeLayout
-                        android:id="@+id/BtnPenerjemaah"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"
-                        >
 
-                        <FrameLayout
-                            xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:id="@+id/roundContainer"
-                            >
-
-                            <!-- Latar belakang bulat -->
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/green_bg"/>
-
-                            <!-- Gambar di tengah -->
-                            <ImageView
-                                android:id="@+id/imgtheatere"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/theatere_icon"
-                                android:layout_gravity="center"
-                                android:scaleType="centerInside"/>
-                        </FrameLayout>
-
-
-                        <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/roundContainer"
-                            android:text="Penerjemah"
-                            android:textAlignment="center" />
-                    </RelativeLayout>
 
                     <!-- kedua -->
                     <RelativeLayout
