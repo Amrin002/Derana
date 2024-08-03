@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,7 +85,13 @@
                         android:textStyle="bold"/>
                 </FrameLayout>
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bahasa daerah berdasarkan provinsi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
                 <!-- LANGUAGE LIST -->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -106,6 +113,189 @@
             </LinearLayout>
         </FrameLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurasi pembelajaran bahasa daerah"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/jakarta_sans_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temukan set kreasi pembelajaran bahasa daerah yang dibuat oleh komunitas"
+                android:textStyle="normal"
+                android:layout_marginVertical="22dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/jakarta_sans_reguler"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/BtnPenerjemaah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+
+                        <FrameLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/roundContainer"
+                            >
+
+                            <!-- Latar belakang bulat -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/green_bg"/>
+
+                            <!-- Gambar di tengah -->
+                            <ImageView
+                                android:id="@+id/imgtheatere"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/theatere_icon"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/roundContainer"
+                            android:text="Penerjemah"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <!-- kedua -->
+                    <RelativeLayout
+                        android:id="@+id/BtnPenerjemah1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+
+                        <FrameLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/roundContainer1"
+                            >
+
+                            <!-- Latar belakang bulat -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/green_bg"/>
+
+                            <!-- Gambar di tengah -->
+                            <ImageView
+                                android:id="@+id/imgtheatere1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/theatere_icon"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/roundContainer1"
+                            android:text="Penerjemah"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                    <!-- ketiga -->
+                    <RelativeLayout
+                        android:id="@+id/BtnPenerjemaah2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        >
+
+                        <FrameLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/roundContainer2"
+                            >
+
+                            <!-- Latar belakang bulat -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/green_bg"/>
+
+                            <!-- Gambar di tengah -->
+                            <ImageView
+                                android:id="@+id/imgtheatere2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/theatere_icon"
+                                android:layout_gravity="center"
+                                android:scaleType="centerInside"/>
+                        </FrameLayout>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/roundContainer2"
+                            android:text="Penerjemah"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Pembelajaran"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginVertical="30dp"
+                android:fontFamily="@font/jakarta_sans_bold"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelajari video pembelajaran bahasa daerah terkini dari komunitas Derana"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:fontFamily="@font/jakarta_sans_reguler"/>
+
+            <RelativeLayout
+                android:layout_below="@id/ayoBelajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/highlightLayout1"
+                android:layout_marginTop="10dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rvBelajar"/>
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
 

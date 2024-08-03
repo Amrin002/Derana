@@ -12,7 +12,10 @@ import android.widget.FrameLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.newderanaindonesia.derana.R
+import com.newderanaindonesia.derana.adapter.AdapterBelajar
 import com.newderanaindonesia.derana.adapter.AdapterLanguageCard
+import com.newderanaindonesia.derana.data.DataBelajar
 import com.newderanaindonesia.derana.data.DataLanguageCard
 import com.newderanaindonesia.derana.databinding.FragmentDiscoverBinding
 
@@ -39,10 +42,20 @@ class DiscoverFragment : Fragment() {
              DataLanguageCard("Bahasa Buru", Color.parseColor("#FF53BF"))
         )
 
+        val belajarItems = listOf(
+            DataBelajar("Belajar\nBahasa Buru", "Episode 1", R.drawable.belajar1, 50, Color.parseColor("#3CCAFD")),
+            DataBelajar("Belajar\nBahasa Alune", "Episode 2", R.drawable.belajar2, 70, Color.parseColor("#DF1995")),
+            DataBelajar("Belajar\nBahasa Yatoke", "Episode 3", R.drawable.belajar3, 30, Color.parseColor("#F06400"))
+        )
+
         val adapter = AdapterLanguageCard(languageItems)
         binding.rvLanguage.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvLanguage.adapter = adapter
 
+
+        val belajarAdapter = AdapterBelajar(belajarItems)
+        binding.rvBelajar.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        binding.rvBelajar.adapter = belajarAdapter
     }
 
     override fun onDestroyView() {
