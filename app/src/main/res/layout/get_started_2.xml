@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@color/tranparant"
+    >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vpTxtGetstarted"
+        android:layout_alignStart="@id/frameGetstarted"
+        android:text="Pelajari Bahasa Daerah \ndi Daerahmu"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jakarta_sans_semibold"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounded_background"
+        android:backgroundTint="#EEFAFF"
+        android:id="@+id/frameGetstarted"
+        android:layout_below="@id/vpTxtGetstarted"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/gs1"/>
+    </RelativeLayout>
 </RelativeLayout>

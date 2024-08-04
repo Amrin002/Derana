@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@color/primaryColor"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGetStarted1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/jakarta_sans_bold"
+        android:text="Selamat datang di Derana"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGetStarted1"
+        android:text="Masukkan Akunmu \nSekarang"
+        android:textColor="@color/white"
+        android:layout_alignStart="@id/txtGetStarted1"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/jakarta_sans_semibold"
+        android:textStyle="bold"
+        android:id="@+id/textLogin"
+        />
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/txtGetStarted1"-->
+<!--        android:id="@+id/frameTextLogin"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_alignStart="@id/txtGetStarted1"/>-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txtGetStarted1"
+        android:layout_below="@id/textLogin"
+        android:layout_marginTop="20dp"
+        android:text="Nikmati pengalaman baru menjelajah fitur dan \nlayanan bahasa daerah di sini."
+        android:fontFamily="@font/jakarta_sans_reguler"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:id="@+id/textDescLogin"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textDescLogin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sheet_rounded_background"
+        android:id="@+id/v1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLogin"
+        android:layout_alignTop="@id/v1"
+        android:background="@drawable/bgtab_login"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabMasuk"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:background="@drawable/rounded_tab_login"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="10dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabDaftar"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:textSize="14dp"
+            android:background="@color/tranparant"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

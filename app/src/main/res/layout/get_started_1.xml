@@ -7,12 +7,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/vpTxtGetstarted"
-        android:layout_marginStart="20dp"
+
         android:text="Akses Bahasa Daerah \ndi Gengamanmu"
         android:textColor="@color/white"
         android:fontFamily="@font/jakarta_sans_semibold"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/frameGetstarted"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_rounded_background"
+        android:backgroundTint="#EEFAFF"
+        android:id="@+id/frameGetstarted"
+        android:layout_below="@id/vpTxtGetstarted"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        >
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:id="@+id/layoutStatus"-->
+<!--            android:layout_width="331dp"-->
+<!--            android:layout_height="77dp"-->
+<!--            android:src="@drawable/gs1"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            />-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_width="345dp"-->
+<!--            android:layout_height="191dp"-->
+<!--            android:layout_below="@id/layoutStatus"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:src="@drawable/gs2"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="20dp"/>-->
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="320dp"
+    android:layout_height="320dp"
+    android:src="@drawable/gs2"
+    android:layout_centerHorizontal="true"
+    />
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

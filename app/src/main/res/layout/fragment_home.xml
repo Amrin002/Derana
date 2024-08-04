@@ -12,192 +12,236 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 >
-
-        <RelativeLayout
-            android:id="@+id/shapeContent"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@id/appBar"
-            android:layout_marginTop="-20dp"
-            android:background="#93E3FF">
-
-            <ImageView
-                android:id="@+id/txtContribute"
-                android:layout_width="235dp"
-                android:layout_height="82dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-
-                android:src="@drawable/textcontribute" />
-
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_alignEnd="@id/txtContribute"
-                android:layout_alignParentEnd="true"
-
-                android:layout_marginEnd="9dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/berandakontribusi"
-
-                />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnContribute"
-                android:layout_width="137dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/txtContribute"
-                android:backgroundTint="@color/green"
-                android:textColor="@color/white"
-                android:text="Daftar di sini"
-                android:layout_alignStart="@id/txtContribute"
-                android:layout_marginTop="5dp"
-                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:id="@+id/viewHome"
+                    android:background="@color/secondaryColor"/>
+                <RelativeLayout
+                    android:id="@+id/appBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_background">
 
 
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:id="@+id/search_bar"
+                        android:layout_alignEnd="@id/avatar_icon"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/search_background"
+                        android:hint="Mau belajar apa hari ini?"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/search_ic"
+                        android:drawablePadding="10dp"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="56dp"
+                        android:backgroundTint="@color/backgroundSearch"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="10dp"/>
 
+                    <!-- Avatar Icon -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/avatar_icon"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignBottom="@id/search_bar"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="25dp"
+                        android:src="@drawable/avatar"
+                        app:elevation="10dp"
+                        app:strokeColor="@color/white"
+                        app:strokeWidth="2dp"
+                        app:useCompatPadding="true" />
 
+                </RelativeLayout>
+                <ImageView
+                    android:layout_below="@id/appBar"
+                    android:id="@+id/txtContribute"
+                    android:layout_width="215dp"
+                    android:layout_height="82dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/textcontribute" />
 
-        </RelativeLayout>
-        <RelativeLayout
-
-            android:layout_width="380dp"
-            android:layout_height="80dp"
-            android:id="@+id/layoutStatus"
-            android:layout_below="@id/shapeContent"
-            android:layout_marginTop="-20dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/all_rounded_background">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/statusClass"
-
-                android:layout_alignParentStart="true">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnContribute"
+                    android:layout_width="137dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/txtContribute"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    android:text="Daftar di sini"
+                    android:layout_alignStart="@id/txtContribute"
+                    android:layout_marginTop="5dp"
+                    />
 
                 <ImageView
-                    android:id="@+id/tropyImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/trophy"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toEndOf="@id/tropyImage"
-                    android:layout_marginStart="10dp">
+                    android:layout_width="174dp"
+                    android:layout_height="130dp"
 
+                    android:layout_alignEnd="@id/txtContribute"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignBottom="@id/layoutStatus"
+                    android:layout_marginBottom="76dp"
+                    android:src="@drawable/berandakontribusi"
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/tropyText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kelas"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/jakarta_sans_reguler" />
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/classLevel"
-                        android:text="Pemula"
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/jakarta_sans_bold"
-                        />
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/statusPoin"
-                android:layout_width="wrap_content"
+                    />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="23dp"
-                android:layout_marginEnd="25dp"
-                android:layout_toStartOf="@+id/statusVoucher"
-                android:layout_toEndOf="@+id/statusClass"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/poinImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_centerVertical="true"
-
-                    android:src="@drawable/coin" />
-
-                <LinearLayout
+                android:id="@+id/layoutStatus"
+                android:layout_below="@id/btnContribute"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/all_rounded_background">
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_toEndOf="@id/poinImage"
-                    android:orientation="vertical">
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/statusClass"
+
+                        android:layout_alignParentStart="true">
+
+                        <ImageView
+                            android:id="@+id/tropyImage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/trophy"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_toEndOf="@id/tropyImage"
+                            android:layout_marginStart="10dp">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tropyText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kelas"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/jakarta_sans_reguler" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/classLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:text="Pemula"
+                                android:textStyle="bold"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/statusPoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_toStartOf="@+id/statusVoucher"
+                        android:layout_toEndOf="@+id/statusClass"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/poinImage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+
+                            android:src="@drawable/coin" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@id/poinImage"
+                            android:orientation="vertical">
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/poinText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/jakarta_sans_reguler"
+                                android:textColor="@color/black"
+                                android:text="Poin" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/coinLevel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/jakarta_sans_bold"
+                                android:textStyle="bold"
+                                android:text="0"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusVoucher"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_marginEnd="20dp"
+                    android:gravity="left">
+                    <ImageView
+                        android:id="@+id/voucherImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/voucher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/voucherImage"
+                        android:orientation="vertical">
 
 
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/poinText"
+                        android:id="@+id/voucherText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/jakarta_sans_reguler"
-                        android:textColor="@color/black"
-                        android:text="Poin" />
+                        android:text="Voucher"
+                        android:textColor="@color/black"/>
 
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/coinLevel"
+                        android:id="@+id/voucherLevel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/black"
                         android:fontFamily="@font/jakarta_sans_bold"
-                        android:text="0" />
-                </LinearLayout>
+                        android:text="32"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    </LinearLayout>
 
-            </RelativeLayout>
+                </RelativeLayout>
+                </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/statusVoucher"
-                android:layout_alignParentEnd="true"
-
-                android:layout_marginEnd="20dp"
-                android:gravity="left">
-                <ImageView
-                    android:id="@+id/voucherImage"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
-                    android:src="@drawable/voucher" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_toEndOf="@id/voucherImage"
-                    android:orientation="vertical">
-
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/voucherText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/jakarta_sans_reguler"
-                    android:text="Voucher"
-                    android:textColor="@color/black"/>
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/voucherLevel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/jakarta_sans_bold"
-                    android:text="32"
-                    android:textColor="@color/black"/>
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <RelativeLayout
+                <RelativeLayout
+                    android:layout_gravity="bottom"
                 android:id="@+id/connectAccount"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
@@ -231,65 +275,19 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="15dp"
-                    android:src="@drawable/arrowleft" />
+                    android:src="@drawable/arrowright" />
             </RelativeLayout>
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/appBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_background">
+        </LinearLayout>
 
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:id="@+id/search_bar"
-                android:layout_alignEnd="@id/avatar_icon"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/search_background"
-                android:hint="Mau belajar apa hari ini?"
-                android:layout_marginTop="16dp"
-                android:drawableStart="@drawable/search_ic"
-                android:drawablePadding="10dp"
-                android:textColorHint="@color/black"
-                android:textColor="@color/black"
-                android:layout_marginEnd="56dp"
-                android:backgroundTint="@color/backgroundSearch"
-                android:fontFamily="@font/jakarta_sans_reguler"
-                android:textSize="13sp"
-                android:layout_marginBottom="10dp"/>
-
-            <!-- Avatar Icon -->
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/avatar_icon"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_alignBottom="@id/search_bar"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="25dp"
-                android:src="@drawable/avatar"
-                app:elevation="10dp"
-                app:strokeColor="@color/white"
-                app:strokeWidth="2dp"
-                app:useCompatPadding="true" />
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/search_view"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_below="@id/search_bar"
-                android:visibility="gone" />
-            <!-- Penutup App Bar -->
-        </RelativeLayout>
 <!--penutup status profil-->
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/shapeContent"
-            android:layout_marginTop="80dp"
+            android:layout_below="@id/layoutStatus"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:id="@+id/fiturMenus">
 

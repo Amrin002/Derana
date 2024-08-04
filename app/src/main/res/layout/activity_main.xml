@@ -19,14 +19,116 @@
             android:backgroundTint="@color/white"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            style="@style/Widget.Design.NavigationView"
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="69dp"
             android:layout_alignParentBottom="true"
-            app:itemIconTint="@drawable/nav_item_color"
-            app:itemTextColor="@drawable/nav_item_color"
             android:background="@color/white"
             android:backgroundTint="@color/white"
+            app:itemIconTint="@drawable/nav_item_color"
+            app:itemTextColor="@drawable/nav_item_color"
             app:menu="@menu/bottom_nav_menu" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/bottomNavigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:background="@color/white">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="8dp"-->
+<!--                android:onClick="onNavigationItemSelected">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/nav_home"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/beranda_ic"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Beranda"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:layout_below="@id/nav_home"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </RelativeLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="8dp"-->
+<!--                android:onClick="onNavigationItemSelected"-->
+<!--                android:layout_gravity="center">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/nav_learn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/belajar_ic" -->
+<!--                    android:layout_gravity="center|top"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Belajar"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="8dp"-->
+<!--                android:onClick="onNavigationItemSelected">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/nav_discover"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/temukan_ic" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Temukan"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="8dp"-->
+<!--                android:onClick="onNavigationItemSelected">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/nav_chat"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/chat_ic" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Obrolan"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
     </RelativeLayout>
 </RelativeLayout>

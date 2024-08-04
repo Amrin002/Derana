@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GetStartedActivity">
+    tools:context=".GetStartedActivity"
+    android:background="@color/white">
 
    <View
        android:layout_width="match_parent"
@@ -17,62 +18,90 @@
         android:id="@+id/txtGetStarted1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/jakarta_sans_bold"
         android:text="Selamat datang di Derana"
         android:textStyle="bold"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        />
 
-<!--    <androidx.appcompat.widget.AppCompatTextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/textGetStarted2"-->
-<!--        android:layout_below="@id/txtGetStarted1"-->
-<!--        android:text="Akses Bahasa Daerah \ndi Genggamanmu"-->
-<!--        android:textStyle="bold"-->
-<!--        android:fontFamily="@font/jakarta_sans_semibold"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:textSize="20dp"-->
-<!--        android:layout_marginStart="20dp"/>-->
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtGetStarted1"
         android:id="@+id/vpGetStarted"
         android:layout_marginTop="20dp"
+
         />
-    <com.google.android.material.tabs.TabLayout
+    <LinearLayout
+        android:layout_marginTop="65dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/loginFacebook"
         android:layout_below="@id/vpGetStarted"
-        android:id="@+id/tbGetstarted"
-        app:tabIndicatorColor="@color/primaryColor"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
 
+        >
+<!--        sebagai tanda perpindahan view pager-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/rounded_tab"
+            android:id="@+id/vp1"
+          />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/rounded_tab"
+            android:id="@+id/vp2"
+            android:layout_marginStart="10dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/rounded_tab"
+            android:id="@+id/vp3"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="300dp"
+<!--    <Button-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/buttonmasukalt"-->
+<!--        android:text="Login dengan Facebook"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textAlignment="center"-->
+<!--        android:fontFamily="@font/jakarta_sans_reguler"-->
+<!--        android:id="@+id/altFacebook"-->
+<!--        android:paddingHorizontal="16dp"-->
+<!--        android:elegantTextHeight="true"-->
+
+<!--        android:drawableLeft="@drawable/ic_facebook"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_marginLeft="20dp"/>-->
+
+    <Button
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/loginGoogle"
         android:text="Masuk Dengan Facebook"
         android:textAllCaps="false"
         android:textAlignment="center"
         android:fontFamily="@font/jakarta_sans_semibold"
+        android:elegantTextHeight="true"
         android:textColor="#6D6D6D"
+        android:elevation="0dp"
         android:background="@drawable/facebook_background"
-        android:drawableStart="@drawable/ic_facebook"
+        android:drawableLeft="@drawable/ic_facebook"
         android:drawablePadding="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:id="@+id/loginFacebook"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/lblRegister"
         android:text="Masuk Dengan Google"
@@ -94,7 +123,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
+
         >
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
