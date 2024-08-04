@@ -1,7 +1,9 @@
 package com.newderanaindonesia.derana.adapter
 
 import android.graphics.Color
+import android.graphics.Rect
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.newderanaindonesia.derana.data.DataLanguageCard
@@ -25,4 +27,10 @@ class AdapterLanguageCard(private val items: List<DataLanguageCard>) : RecyclerV
     }
 
     override fun getItemCount() = items.size
+
+    class MarginItemDecoration(private val spaceHeight: Int) : RecyclerView.ItemDecoration() {
+        override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
+            outRect.right = spaceHeight
+        }
+    }
 }

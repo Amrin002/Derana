@@ -13,8 +13,10 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.newderanaindonesia.derana.R
+import com.newderanaindonesia.derana.adapter.AdapterActivity
 import com.newderanaindonesia.derana.adapter.AdapterBelajar
 import com.newderanaindonesia.derana.adapter.AdapterLanguageCard
+import com.newderanaindonesia.derana.data.DataActivity
 import com.newderanaindonesia.derana.data.DataBelajar
 import com.newderanaindonesia.derana.data.DataLanguageCard
 import com.newderanaindonesia.derana.databinding.FragmentDiscoverBinding
@@ -48,14 +50,25 @@ class DiscoverFragment : Fragment() {
             DataBelajar("Belajar\nBahasa Yatoke", "Episode 3", R.drawable.belajar3, 30, Color.parseColor("#F06400"))
         )
 
+        val activityItems = listOf(
+            DataActivity(R.drawable.blue_bg, R.drawable.beach_icon, "Wisata"),
+            DataActivity(R.drawable.red_bg,R.drawable.theatere_icon, "Budaya"),
+            DataActivity(R.drawable.purple_bg, R.drawable.job_icon, "Pekerjaan"),
+            DataActivity(R.drawable.green_bg, R.drawable.food_icon, "Makanan")
+        )
+
         val adapter = AdapterLanguageCard(languageItems)
         binding.rvLanguage.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvLanguage.adapter = adapter
-
+        binding.rvLanguage.addItemDecoration(AdapterLanguageCard.MarginItemDecoration(24))
 
         val belajarAdapter = AdapterBelajar(belajarItems)
         binding.rvBelajar.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvBelajar.adapter = belajarAdapter
+
+        val adapterActivity = AdapterActivity(activityItems)
+        binding.rvActivity.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL, false)
+        binding.rvActivity.adapter = adapterActivity
     }
 
     override fun onDestroyView() {
