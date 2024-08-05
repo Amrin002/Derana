@@ -70,6 +70,7 @@ class GetStartedActivity : AppCompatActivity() {
         binding.loginFacebook.setOnClickListener {
             val intent = Intent(this@GetStartedActivity,MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 
