@@ -4,15 +4,14 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
-
-    app:cardElevation="8dp"
-
-    android:background="@color/white">
+    android:theme="@style/Base.Theme.Derana"
+    android:layout_margin="10dp"
+>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
+        android:background="@color/white">
 
 
         <androidx.appcompat.widget.AppCompatImageView

@@ -1,14 +1,545 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.LearnFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LearnFragment"
+    android:background="@color/white"
+    android:theme="@style/Base.Theme.Derana">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Belajar Tab" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/buton"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+<!--            Card Bahasa dan Provinsi-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="2dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jmlhBahasa"
+                    android:text="718"
+                    android:fontFamily="@font/jakarta_sans_semibold"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bahasa Daerah"
+                    android:layout_below="@id/jmlhBahasa"
+                    android:fontFamily="@font/jakarta_sans_reguler"
+                    android:layout_alignStart="@id/jmlhBahasa"
 
-</FrameLayout>
+                    />
+                <FrameLayout
+                    android:layout_below="@id/jmlhBahasa"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="150dp"
+                    android:layout_height="5dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#FF5733"
+                    android:id="@+id/color"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignStart="@id/jmlhBahasa"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrowrightblack"
+                    android:layout_toEndOf="@id/jmlhBahasa"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="15dp"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="2dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/jmlhProv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/jakarta_sans_semibold"
+                        android:text="38"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/jmlhProv"
+                        android:layout_alignStart="@id/jmlhProv"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+                        android:text="Provinsi"
+
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/color1"
+                        android:layout_width="150dp"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/jmlhProv"
+                        android:layout_alignStart="@id/jmlhProv"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#00A4DE" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toEndOf="@id/jmlhProv"
+                        android:src="@drawable/arrowrightblack" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akses Bahasa"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/jakarta_sans_bold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar cepat dan mudah dengan memilih \nmenu di bawah ini"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jakarta_sans_reguler"
+            android:textStyle="normal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:paddingBottom="10dp"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="2dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_materi"
+                    android:id="@+id/iconMateri"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iconMateri"
+                        android:layout_alignStart="@id/iconMateri"
+                        android:fontFamily="@font/jakarta_sans_semibold"
+                        android:text="Materi"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selengkapnya"
+                        android:layout_below="@id/iconMateri"
+                        android:layout_alignStart="@id/iconMateri"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+                        android:textStyle="normal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="2dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_kartukata"
+                        android:id="@+id/iconKartuKata"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iconKartuKata"
+                        android:layout_alignStart="@id/iconKartuKata"
+                        android:fontFamily="@font/jakarta_sans_semibold"
+                        android:text="Kartu Kata"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selengkapnya"
+                        android:layout_below="@id/iconKartuKata"
+                        android:layout_alignStart="@id/iconKartuKata"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+                        android:textStyle="normal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="2dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_phrasa"
+                        android:id="@+id/iconPharasa"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iconPharasa"
+                        android:layout_alignStart="@id/iconPharasa"
+                        android:fontFamily="@font/jakarta_sans_semibold"
+                        android:text="Pharasabook"
+                        android:textStyle="bold|italic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selengkapnya"
+                        android:layout_below="@id/iconPharasa"
+                        android:layout_alignStart="@id/iconPharasa"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+                        android:textStyle="normal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahasa daerah berdasarkan provinsi"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jakarta_sans_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan bahasa daerah yang ingin kamu \npelajari berdasarkan provinsi di Indonesia"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jakarta_sans_reguler"
+            android:textStyle="normal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvProvinsi"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Pembelajaran"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jakarta_sans_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mulai belajar bahasa daerah kamu disini"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jakarta_sans_reguler"
+            android:textStyle="normal"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_audio"
+                    android:id="@+id/audio_belajar"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/audio_belajar"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio"
+                        android:fontFamily="@font/jakarta_sans_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Pelajari bunyi fonem bahasa daerah"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_percakapan"
+                    android:id="@+id/percakapan_belajar"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/percakapan_belajar"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Percakapan"
+                        android:fontFamily="@font/jakarta_sans_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Pelajari bercakap bahasa daerah"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_menulis"
+                    android:id="@+id/menulis_belajar"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/menulis_belajar"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Menulis"
+                        android:fontFamily="@font/jakarta_sans_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Pelajari penulisan aksara daerah"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_membaca"
+                    android:id="@+id/membaca_belajar"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/membaca_belajar"
+                    >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Membaca"
+                        android:fontFamily="@font/jakarta_sans_bold"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="20dp"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Pelajari kosakata bahasa daerah"
+                        android:fontFamily="@font/jakarta_sans_reguler"
+
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
