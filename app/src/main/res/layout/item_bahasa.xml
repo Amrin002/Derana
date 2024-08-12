@@ -4,9 +4,9 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
-
-
-    android:background="@color/white">
+    android:theme="@style/Base.Theme.Derana"
+    android:layout_margin="10dp"
+>
 
     <RelativeLayout
         android:layout_width="wrap_content"
