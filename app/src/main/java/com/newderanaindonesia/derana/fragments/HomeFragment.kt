@@ -11,6 +11,7 @@ import com.newderanaindonesia.derana.R
 import com.newderanaindonesia.derana.adapter.AdapterBelajar
 import com.newderanaindonesia.derana.data.DataBelajar
 import com.newderanaindonesia.derana.databinding.FragmentHomeBinding
+import com.newderanaindonesia.derana.fragments.features.VitalitasBahasaFragment
 
 class HomeFragment : Fragment() {
 
@@ -55,7 +56,12 @@ class HomeFragment : Fragment() {
             //
         }
         binding.BtnVitalitasbahasa.setOnClickListener {
-            //
+
+            val vitalitasBahasaFragment = VitalitasBahasaFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, vitalitasBahasaFragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
         }
         binding.BtnVideobahasa.setOnClickListener {
             //

@@ -8,6 +8,6 @@
         <item name="fontFamily">@font/jakarta_sans_reguler</item>
         <item name="android:statusBarColor">@color/primaryColor</item>
         <item name="statusBarBackground">@color/primaryColor</item>
-
+        <item name="background">@color/white</item>
     </style>
 </resources>
